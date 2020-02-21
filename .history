@@ -1,40 +1,40 @@
-#+1582311229
-git commit -m "second commit"
-#+1582311678
-cd pro_3
-#+1582311685
-touch maintest.cc
-#+1582312121
-git remote -v
-#+1582312160
-git add*p .
-#+1582312198
-git -v
-#+1582312242
-git add .
-#+1582312332
-git help
-#+1582312375
-git push help
-#+1582312980
-git commit p* .
-#+1582313203
-git commit p* "third commit" .
-#+1582313243
-git commit p* "third commit"
-#+1582313298
-git commit p*
-#+1582313330
-git push origin master
-#+1582313438
+#+1582320903
 cd pro_1
-#+1582313454
-cd pro_0
-#+1582313456
+#+1582320922
+git status
+#+1582321044
+git remote add origin https://github.com/Jmartin042/ee259d15
+#+1582321080
+git remote add origin https://github.com/Jmartin042/ee259d15.git
+#+1582321165
+git remote add origin https://github.com/Jmartin042/test.git
+#+1582321218
+git remote set origin https://github.com/Jmartin042/test.git
+#+1582321240
+git remote set https://github.com/Jmartin042/test.git
+#+1582321364
+git remote set -https://github.com/Jmartin042/test.git
+#+1582321500
+git remote set -url
+#+1582321519
+git remote set -url origin https://github.com/Jmartin042/test.git
+#+1582321542
+git remote set-url origin https://github.com/Jmartin042/test.git
+#+1582321786
+git init
+#+1582321808
+git remote -v
+#+1582321850
+git add .
+#+1582321933
+git commit -m "first commit"
+#+1582321994
+git push origin
+#+1582322094
+git push origin master
+#+1582322438
 ls
-#+1582313483
+#+1582322440
 cd
-#+1582314405
-git rm --cached .config
-#+1582314524
+#+1582322443
 exit
