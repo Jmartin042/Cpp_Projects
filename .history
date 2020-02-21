@@ -1,0 +1,40 @@
+#+1582250763
+mkdir pro_3
+#+1582303884
+cd pro_3
+#+1582303893
+cp /mnt/ee259dir/tools/pro_3/* .
+#+1582303937
+cd Desktop
+#+1582303955
+cp /mnt/ee259dir/tools/pro_2/* .
+#+1582304243
+rm -r /home/ee259d15/Desktop/*
+#+1582304278
+cd pro_2
+#+1582307795
+subl p1.h
+#+1582307928
+cp /mnt/ee259dir/tools/pro_1/sample_p1.h
+#+1582307953
+cp /mnt/ee259dir/tools/pro_1/sample_p1.h .
+#+1582307969
+subl sample_p1.h
+#+1582308130
+cp /mnt/ee259dir/tools/pro_1/sample_p0.h .
+#+1582308164
+cd pro_1
+#+1582308165
+la
+#+1582308166
+ls
+#+1582310317
+cd pro_0
+#+1582310333
+vim p0.h
+#+1582310367
+code .
+#+1582310380
+cd
+#+1582310383
+exit
