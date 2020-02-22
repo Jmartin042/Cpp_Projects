@@ -173,4 +173,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/ee259d15/pro_2/p2.h" added="2020-02-22T01:16:30Z" modified="2020-02-22T01:16:30Z" visited="2020-02-22T01:16:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-chdr"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-02-22T01:16:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ee259d15/pro_0/p0.h" added="2020-02-22T01:17:55Z" modified="2020-02-22T01:17:55Z" visited="2020-02-22T01:17:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-chdr"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-02-22T01:17:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

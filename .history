@@ -1,40 +1,40 @@
-#+1582320903
+#+1582326357
+Desktop
+#+1582326374
+cp /mnt/ee259dir/tools/pro_0/sample_p0.h
+#+1582326392
+cp /mnt/ee259dir/tools/pro_1/sample_p1.h
+#+1582326521
+cd Desktop
+#+1582326543
+cp /mnt/ee259dir/tools/pro_0/p0.h
+#+1582326559
+cp /mnt/ee259dir/tools/pro_1/p1.h
+#+1582326600
+cp /mnt/ee259dir/tools/pro_0/* .
+#+1582326673
+rm *
+#+1582326745
+cp /mnt/ee259dir/tools/pro_0/sample_p0.h .
+#+1582326794
 cd pro_1
-#+1582320922
-git status
-#+1582321044
-git remote add origin https://github.com/Jmartin042/ee259d15
-#+1582321080
-git remote add origin https://github.com/Jmartin042/ee259d15.git
-#+1582321165
-git remote add origin https://github.com/Jmartin042/test.git
-#+1582321218
-git remote set origin https://github.com/Jmartin042/test.git
-#+1582321240
-git remote set https://github.com/Jmartin042/test.git
-#+1582321364
-git remote set -https://github.com/Jmartin042/test.git
-#+1582321500
-git remote set -url
-#+1582321519
-git remote set -url origin https://github.com/Jmartin042/test.git
-#+1582321542
-git remote set-url origin https://github.com/Jmartin042/test.git
-#+1582321786
-git init
-#+1582321808
-git remote -v
-#+1582321850
+#+1582326805
+cd pro_2
+#+1582326827
+cp /mnt/ee259dir/tools/pro_2/sample_p2.h .
+#+1582326956
 git add .
-#+1582321933
-git commit -m "first commit"
-#+1582321994
-git push origin
-#+1582322094
+#+1582326999
+git commit -m "second commit"
+#+1582327075
 git push origin master
-#+1582322438
-ls
-#+1582322440
+#+1582334018
+cd pro_0
+#+1582334030
+subl p0.h
+#+1582334336
 cd
-#+1582322443
+#+1582334338
+ls
+#+1582334469
 exit

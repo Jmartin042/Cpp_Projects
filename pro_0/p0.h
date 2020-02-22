@@ -12,7 +12,7 @@
 using namespace std;
 
 ifstream i_f; // declare a pointer to an input file;
-ofstream out_f("output.txt", ios::out); 
+ofstream o_f("output.txt", ios::out); 
 
   class SIMPLEST_GRADES
   {
@@ -58,62 +58,62 @@ SIMPLEST_GRADES::SIMPLEST_GRADES(int x, int y)
 	}
 	i_f.close(); // close input file;
 	i_f.clear(); // rewind file pointer to the top of the file;	
-	out_f << "+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH "<<n<<" STUDENTS, EACH WITH "<<e<<" EXAMS." << endl;
+	o_f << "+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH "<<n<<" STUDENTS, EACH WITH "<<e<<" EXAMS." << endl;
 }
 
 void
 SIMPLEST_GRADES::SIMPLEST_LIST(int x)
 {
-	out_f << "+ START SIMPLEST_LIST" << endl;
+	o_f << "+ START SIMPLEST_LIST" << endl;
 	int i;
 	int j;
 	if(x==1)
 	{
-		out_f << "+ STUDENT IDS:" << endl;
+		o_f << "+ STUDENT IDS:" << endl;
 		for(i =0; i < n; i++)
 		{
-			out_f << id[i] << endl;
+			o_f << id[i] << endl;
 		}
 	}
 	else if(x==2)// IDs and grades
 	{
-		out_f << "+ STUDENT IDS AND EXAM GRADES:" << endl;
+		o_f << "+ STUDENT IDS AND EXAM GRADES:" << endl;
 		for(i =0; i < n; i++)
 		{
-			out_f << id[i]<<"	";
+			o_f << id[i]<<"	";
 			for(j = 0 ;j < e; j++)
 			{
-				out_f << exam_grades[i][j]<<"  ";
+				o_f << exam_grades[i][j]<<"  ";
 			}
-		out_f<<endl;
+		o_f<<endl;
 		}
 	}
 	else if(x==-1)// IDs in reverse
 	{
-		out_f << "+ STUDENT IDS IN REVERSE ORDER:" << endl;
+		o_f << "+ STUDENT IDS IN REVERSE ORDER:" << endl;
 		for(i = (n-1); i > -1; i--)
 		{
-			out_f << id[i] << endl;
+			o_f << id[i] << endl;
 		}	
 	}
 	else if(x==-2)// IDs and grades in reverse
 	{
-		out_f << "+ STUDENT IDS AND EXAM GRADES IN REVERSE ORDER:" << endl;
+		o_f << "+ STUDENT IDS AND EXAM GRADES IN REVERSE ORDER:" << endl;
 		for(i = (n-1); i > -1; i--)
 		{
-				out_f << id[i] <<"	";
+				o_f << id[i] <<"	";
 			for(j = 0 ;j < e ; j++)
 			{
-				out_f << exam_grades[i][j]<<"  ";
+				o_f << exam_grades[i][j]<<"  ";
 			}
-			out_f<<endl;
+			o_f<<endl;
 		}	
 	}
 	else
 	{
-		out_f << "+ INPUT ERROR" << endl;	
+		o_f << "+ INPUT ERROR" << endl;	
 	}
-	out_f << "+ END SIMPLEST_LIST" << endl;
+	o_f << "+ END SIMPLEST_LIST" << endl;
 }
 
 void
@@ -122,7 +122,7 @@ SIMPLEST_GRADES::SIMPLEST_AVE(int x)
 	int i;
 	int j;
 	int sum=0;
-	out_f << "+ START SIMPLEST_AVE" << endl;
+	o_f << "+ START SIMPLEST_AVE" << endl;
 	if(x<e && x>=0)
 	{
 		for(i =0; i < n; i++)
@@ -137,11 +137,11 @@ SIMPLEST_GRADES::SIMPLEST_AVE(int x)
 			}
 		}
 		float y=(float)sum/(float)n;
-		out_f<<"+ AVERAGE FOR "<<n<<" STUDENTS IN EXAM "<<x<<" IS "<<fixed<<setprecision(2)<<y<<"."<<endl;
+		o_f<<"+ AVERAGE FOR "<<n<<" STUDENTS IN EXAM "<<x<<" IS "<<fixed<<setprecision(2)<<y<<"."<<endl;
 	}
 	else
 	{
-		out_f << "+ INPUT ERROR" << endl;
+		o_f << "+ INPUT ERROR" << endl;
 	}
-	out_f << "+ END SIMPLEST_AVE" << endl;
+	o_f << "+ END SIMPLEST_AVE" << endl;
 }

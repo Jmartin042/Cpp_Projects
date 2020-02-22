@@ -8,6 +8,8 @@
 
 #include "/mnt/ee259dir/tools/pro_1/sample_p1.h"
 //#include "/home/ee259d15/pro_1/p1.h"
+//#include "/home/jmartin042/ee259d15/pro_1/p1.h"
+
 using namespace std;
 
 ifstream i_f_2; // declare a pointer to pin input file;
