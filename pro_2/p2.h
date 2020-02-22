@@ -6,9 +6,9 @@
 // EE259 SECTION (DAY/EVE):DAY
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_1/sample_p1.h"
-//#include "/home/ee259d15/pro_1/p1.h"
-//#include "/home/jmartin042/ee259d15/pro_1/p1.h"
+#include "/mnt/ee259dir/tools/pro_1/sample_p1.h" //centos prof file
+//#include "/home/ee259d15/pro_1/p1.h" // centos my file
+//#include "/home/jmartin042/ee259d15/test/pro_1/p1.h" //my own computer
 
 using namespace std;
 

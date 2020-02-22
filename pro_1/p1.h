@@ -8,8 +8,8 @@
 // My file   "/home/ee259d15/pro_0/p0.h" 
 // professor file  "/mnt/ee259dir/tools/pro_0/sample_p0.h"
 
-#include "/mnt/ee259dir/tools/pro_0/sample_p0.h"
-//#include "/home/jmartin042/ee259d15/pro_0/sample_p0.h"
+#include "/mnt/ee259dir/tools/pro_0/sample_p0.h" //centos prof file
+//#include "/home/jmartin042/ee259d15/test/pro_0/sample_p0.h" // my own computer
 
 using namespace std;
 
