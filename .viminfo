@@ -8,6 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:q
 :wq
 :w
 :q!
@@ -25,18 +26,19 @@
 	20
 
 # File marks:
-'0  46  0  ~/pro_0/p0.h
-'1  47  4  ~/pro_0/p0.h
-'2  77  0  ~/pro_0/p0.h
-'3  66  0  ~/pro_0/p0.h
-'4  1  0  ~/pro_0/studentGrades.txt
-'5  1  0  ~/pro_0/P0.h
-'6  77  0  ~/pro_0/skel_p0.h
-'7  1  0  ~/pro_0/P0.h
-'8  77  0  ~/pro_0/skel_p0.h
-'9  36  1  ~/pro_0/p0.h
+'0  147  0  ~/pro_0/p0.h
+'1  46  0  ~/pro_0/p0.h
+'2  47  4  ~/pro_0/p0.h
+'3  77  0  ~/pro_0/p0.h
+'4  66  0  ~/pro_0/p0.h
+'5  1  0  ~/pro_0/studentGrades.txt
+'6  1  0  ~/pro_0/P0.h
+'7  77  0  ~/pro_0/skel_p0.h
+'8  1  0  ~/pro_0/P0.h
+'9  77  0  ~/pro_0/skel_p0.h
 
 # Jumplist (newest first):
+-'  147  0  ~/pro_0/p0.h
 -'  46  0  ~/pro_0/p0.h
 -'  47  1  ~/pro_0/p0.h
 -'  77  0  ~/pro_0/p0.h
@@ -138,7 +140,7 @@
 # History of marks within files (newest to oldest):
 
 > ~/pro_0/p0.h
-	"	46	0
+	"	147	0
 	^	6	21
 	.	46	11
 	+	33	0
