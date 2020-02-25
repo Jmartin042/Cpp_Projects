@@ -287,6 +287,14 @@
 						"buffer_size": 0,
 						"line_ending": "Unix"
 					}
+				},
+				{
+					"file": "/home/ee259d15/pro_2/p2.h",
+					"settings":
+					{
+						"buffer_size": 4943,
+						"line_ending": "Unix"
+					}
 				}
 			],
 			"build_system": "",
@@ -321,16 +329,16 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_2/out_2_expected_4.txt",
+				"/home/ee259d15/pro_2/output.txt",
 				"/home/ee259d15/pro_1/sample_p1.h",
 				"/home/ee259d15/pro_2/p2.h",
 				"/home/ee259d15/pro_0/p0.h",
 				"/home/ee259d15/pro_1/p1.h",
 				"/home/ee259d15/pro_2/out_2_expected_5.txt",
 				"/home/ee259d15/pro_2/main2_5.cc",
-				"/home/ee259d15/pro_2/output.txt",
 				"/home/ee259d15/pro_2/maintest.cc",
 				"/home/ee259d15/pro_2/studentGrades.txt",
-				"/home/ee259d15/pro_2/out_2_expected_4.txt",
 				"/home/ee259d15/pro_2/out_2_expected_3.txt",
 				"/home/ee259d15/pro_2/out_2_expected_2.txt",
 				"/home/ee259d15/pro_2/out_2_expected_1.txt",
@@ -407,7 +415,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -433,6 +441,34 @@
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ee259d15/pro_2/p2.h",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4943,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										4943,
+										4943
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 3402.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
