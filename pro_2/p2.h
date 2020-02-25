@@ -173,12 +173,12 @@ SIMPLE_GRADES::SIMPLE_FIND(int x, int y)  //another method;
 }
 
 int
-SIMPLE_GRADES::SIMPLE_REPORT(int x, int y, int z)
+SIMPLE_GRADES::SIMPLE_REPORT(int x, int y, int z)//x = pins, y=ids, z=grades
 {
 	// your code goes below:
 	o_f<<"+++++ START SIMPLE_REPORT"<<endl;
 	int i,id_pos, pin_pos,k;
-	if(( x<0 || x>9999 )||( y<0 || y>100 )||( z<0 || z>=e ))
+	if(( x<=0 || x>=9999 )||( y<=0 || y>=100 )||( z<0 || z>=e ))
 	{
 		o_f<<"+++++ INPUT ERROR"<<endl;
 		k=-2;

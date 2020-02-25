@@ -84,7 +84,7 @@ SIMPLER_GRADES::SIMPLER_FIND(int x, int y)
 	int found=0;
 	int found_pos;
 	o_f<<"*** START SIMPLER_FIND"<<endl;
-	if((y<0 || y>=e) || (x>9999 || x<0))
+	if((y<0 || y>=e) || (x>=9999 || x<=0))//new update made to x conditions, added "="
 	{
 		o_f<<"*** INPUT ERROR"<<endl;
 	}
