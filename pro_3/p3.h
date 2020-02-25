@@ -1,12 +1,17 @@
 ///////////////////////////////////////////////////////////////
 // I UNDERSTAND THAT COPYING PROGRAMS FROM OTHERS WILL BE DEALT
 // WITH DISCIPLINARY RULES OF CCNY.
-// STUDENT NAME: 
-// LOGIN_NAME: 
-// EE259 SECTION (DAY/EVE): 
+// STUDENT NAME: Jonathan Martinez(23261146)
+// LOGIN_NAME: jmartin042
+// EE259 SECTION (DAY/EVE):DAY
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_2/sample_p2.h"
+//#include "/mnt/ee259dir/tools/pro_2/sample_p2.h" //centos prof file
+#include "/home/ee259d15/pro_2/p2.h" // centos my file
+
+//#include "/home/jmartin042/ee259d15/test/pro_1/p1.h" //my own computer my own file
+//#include "/home/jmartin042/ee259d15/test/pro_1/sample_p1.h" //my own computer, sample file
+
 #include "string.h"
 
 using namespace std;
@@ -62,14 +67,90 @@ GRADES::GRADES(int x, int y)
 void
 GRADES::LIST(int x)
 {	// your code goes below:
-
+	o_f<<"******* START LIST"<<endl;
+	int i,j;
+	if(x==5)
+	{
+		for ( i=0; i<n; i++)
+		{
+			o_f<<firstNames[i]<<" "<<lastNames[i]<<"  ";
+			for(j=0 ; j<e ;j++)
+			{
+				o_f<<exam_grades[i][j]<<" ";
+			}
+			o_f<<endl;
+		}
+	}
+	else if(x==0)
+	{
+		for ( i=0; i<n; i++)
+		{
+			o_f<<firstNames[i]<<" "<<lastNames[i]<<" "<<id[i];
+			o_f<<endl;
+		}
+	}
+	else if(x==-5)
+	{
+		SIMPLEST_LIST(2);
+	}
+	else
+	{
+		o_f<<"******* INPUT ERROR"<<endl;
+	}
+	o_f<<"******* END LIST"<<endl;
 }
 
 void 
 GRADES::ALPHABETIZE(int x)
 {	// your code goes below:
+	o_f<<"******* START ALPHABETIZE"<<endl;
+	char min_name[15], temp_name[15];
+	int i,j,k,min_pos, temp; 
+	if(x==1)
+	{
+		o_f<<"******* STUDENTS SORTED IN ALPHABETICAL ORDER BASED ON LAST NAMES:"<<endl;
+		o_f<<"******* START LIST"<<endl;
 
+		for( i=0 ; i<n ; i++ )
+		{
+			strcpy(min_name,lastNames[i]);
+			min_pos=i;
+			for ( j = i; j < n; j++)
+			{
+				if(strcmp(min_name,lastNames[j])>0)
+				{
+					strcpy(min_name,lastNames[j]);
+					min_pos=j;
+				}
+				else{}
+			}
+			strcpy(temp_name,lastNames[min_pos]);
+			strcpy(lastNames[min_pos],lastNames[i]);
+			strcpy(lastNames[i],temp_name);
 
+			temp=id[i]; 
+			id[i]=id[min_pos]; 
+			id[min_pos]=temp; 
+
+			temp=pin[i];
+			pin[i]=pin[min_pos];
+			pin[min_pos]=temp;
+
+			for ( k = 0; k < e; k++)
+			{
+				temp=exam_grades[i][k];
+				exam_grades[i][k]=exam_grades[min_pos][k];
+				exam_grades[min_pos][k]=temp;
+			}
+		}
+		LIST(5);
+		o_f<<"******* END LIST"<<endl;
+	}
+	else
+	{
+		o_f<<"******* INPUT ERROR"<<endl;
+	}
+	o_f<<"******* END ALPHABETIZE"<<endl;
 }
 
 int 
