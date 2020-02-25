@@ -1,40 +1,40 @@
-#+1582607744
-c++ main2_2.cc
-#+1582607752
-diff -w output.txt out_2_expected_2.txt
-#+1582607758
-c++ main2_3.cc
-#+1582607767
-diff -w output.txt out_2_expected_3.txt
-#+1582607774
-c++ main2_4.cc
-#+1582607848
-c++ main2_5.cc
 #+1582607874
 a.out
 #+1582607876
 diff -w output.txt out_2_expected_5.txt
-#+1582608119
-cd
 #+1582608123
 git add
 #+1582608200
 git commit -m "test5"
-#+1582608212
-git add .
 #+1582608247
 git -A add
 #+1582608265
 git add -A
-#+1582608269
-git status
 #+1582608284
 git commit "test4"
 #+1582608289
 git commit -m "test4"
-#+1582608317
-git push origin master
 #+1582608351
 git pull origin master
-#+1582608369
+#+1582661754
+git remote -v
+#+1582661776
+git commit -m "firstTest"
+#+1582661808
+cd pro_3
+#+1582661865
+cp /mnt/ee259dir/tools/pro_3/* .
+#+1582661868
+ls
+#+1582661875
+cd
+#+1582661879
+git add .
+#+1582661889
+git commit -m "pro3"
+#+1582661909
+git push origin master
+#+1582662060
+git status
+#+1582663824
 exit

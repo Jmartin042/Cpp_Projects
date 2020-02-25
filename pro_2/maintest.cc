@@ -9,7 +9,7 @@ int main ()
 	//g.SIMPLE_MAX(2); // find max in exam 2;
 	//g.SIMPLE_FIND(33333, 11);
 	//g.SIMPLE_REPORT(3333, 33, 2);
-    //g.SIMPLE_REPORT(3322, 33, 2); // no such student;
+    g.SIMPLE_REPORT(0, 22, 2); // no such student;
 
         return 0;
 }

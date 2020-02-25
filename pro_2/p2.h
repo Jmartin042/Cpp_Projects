@@ -138,7 +138,7 @@ SIMPLE_GRADES::SIMPLE_FIND(int x, int y)  //another method;
 	// your code goes below:
 	o_f<<"+++++ START SIMPLE_FIND"<<endl;
 	int i, id_pos, pin_pos,k;
-	if((x<0 || x>9999)||(y<0||y>100))
+	if((x<=0 || x>=9999)||(y<=0||y>=100))
 	{
 		o_f<<"+++++ INPUT ERROR"<<endl;
 		k=-2;
