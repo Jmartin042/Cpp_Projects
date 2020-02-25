@@ -6,10 +6,10 @@
 // EE259 SECTION (DAY/EVE):DAY
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_1/sample_p1.h" //centos prof file
+//#include "/mnt/ee259dir/tools/pro_1/sample_p1.h" //centos prof file
 //#include "/home/ee259d15/pro_1/p1.h" // centos my file
-//#include "/home/jmartin042/ee259d15/test/pro_1/p1.h" //my own computer
-
+#include "/home/jmartin042/ee259d15/test/pro_1/p1.h" //my own computer my own file
+//#include "/home/jmartin042/ee259d15/test/pro_1/sample_p1.h" //my own computer, sample file
 using namespace std;
 
 ifstream i_f_2; // declare a pointer to pin input file;
