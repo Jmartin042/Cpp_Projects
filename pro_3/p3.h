@@ -6,11 +6,11 @@
 // EE259 SECTION (DAY/EVE):DAY
 ///////////////////////////////////////////////////////////////
 
-//#include "/mnt/ee259dir/tools/pro_2/sample_p2.h" //centos prof file
-#include "/home/ee259d15/pro_2/p2.h" // centos my file
+#include "/mnt/ee259dir/tools/pro_2/sample_p2.h" //centos prof file
+//#include "/home/ee259d15/pro_2/p2.h" // centos my file
 
-//#include "/home/jmartin042/ee259d15/test/pro_1/p1.h" //my own computer my own file
-//#include "/home/jmartin042/ee259d15/test/pro_1/sample_p1.h" //my own computer, sample file
+//#include "/home/jmartin042/ee259d15/test/pro_2/p2.h" //my own computer my own file
+//#include "/home/jmartin042/ee259d15/test/pro_2/sample_p2.h" //my own computer, sample file
 
 #include "string.h"
 
@@ -73,7 +73,7 @@ GRADES::LIST(int x)
 	{
 		for ( i=0; i<n; i++)
 		{
-			o_f<<firstNames[i]<<" "<<lastNames[i]<<"  ";
+			o_f<<firstNames[i]<<" "<<lastNames[i]<<"   "<<id[i]<<"  ";
 			for(j=0 ; j<e ;j++)
 			{
 				o_f<<exam_grades[i][j]<<" ";
@@ -85,7 +85,7 @@ GRADES::LIST(int x)
 	{
 		for ( i=0; i<n; i++)
 		{
-			o_f<<firstNames[i]<<" "<<lastNames[i]<<" "<<id[i];
+			o_f<<firstNames[i]<<" "<<lastNames[i]<<"   "<<id[i];
 			o_f<<endl;
 		}
 	}
@@ -109,13 +109,12 @@ GRADES::ALPHABETIZE(int x)
 	if(x==1)
 	{
 		o_f<<"******* STUDENTS SORTED IN ALPHABETICAL ORDER BASED ON LAST NAMES:"<<endl;
-		o_f<<"******* START LIST"<<endl;
 
 		for( i=0 ; i<n ; i++ )
 		{
 			strcpy(min_name,lastNames[i]);
 			min_pos=i;
-			for ( j = i; j < n; j++)
+			for ( j = i; j < n; j++) //sorts by last name only
 			{
 				if(strcmp(min_name,lastNames[j])>0)
 				{
@@ -124,6 +123,10 @@ GRADES::ALPHABETIZE(int x)
 				}
 				else{}
 			}
+			strcpy(temp_name,firstNames[min_pos]); // swaps are performed for firstnames, lastnames, ids, pins and grades
+			strcpy(firstNames[min_pos],firstNames[i]);
+			strcpy(firstNames[i],temp_name);
+
 			strcpy(temp_name,lastNames[min_pos]);
 			strcpy(lastNames[min_pos],lastNames[i]);
 			strcpy(lastNames[i],temp_name);
@@ -144,7 +147,6 @@ GRADES::ALPHABETIZE(int x)
 			}
 		}
 		LIST(5);
-		o_f<<"******* END LIST"<<endl;
 	}
 	else
 	{
@@ -154,15 +156,72 @@ GRADES::ALPHABETIZE(int x)
 }
 
 int 
-GRADES::VERIFY(char * F, char * L)
+GRADES::VERIFY( char*F, char*L)
 {	// your code goes below:
-
-	return -2; // make sure to modify this;
+	o_f<<"******* START VERIFY"<<endl;
+	int i,j, found,k;
+	if (strlen(F)>16 || strlen(L)>16)
+	{
+		o_f<<"******* INPUT ERROR"<<endl;
+		k=-2;
+	}
+	else
+	{
+		found=0;
+		for(i=0;i<n;i++)
+		{
+			if((strcmp(firstNames[i],F)==0) && (strcmp(lastNames[i],L)==0))
+			{
+				found=1;
+				k=i;
+			}
+			else
+			{
+				k=-1;
+			}
+		}
+		if(found==1)
+		{
+			o_f<<"******* THERE IS A STUDENT AS "<<F<<" "<<L<<"."<<endl;
+		}
+		else
+		{
+			o_f<<"******* NO STUDENT AS "<<F<<" "<<L<<"."<<endl;
+		}
+	}
+	o_f<<"******* END VERIFY"<<endl;
+	return k; // make sure to modify this;
 }
 
 void
 GRADES::REPORT(int w, int x, int y, int z)
 {	// your code goes below:
-	
-
+	// x is ID, y is pin, z is exam w is an addition parameter
+	o_f<<"******* START REPORT"<<endl;
+	int i,j,k;
+	if( x<0 || x>=9999 || y<0 || y>=100 || z<0 || z>=e || w>1||(w==0 &&( w!=x || w!=y || w!=z)))
+	{
+		o_f<<"******* INPUT ERROR"<<endl;
+	}
+	else if(x==0 && y==0 && z==0 && w==0)
+	{
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<11;j++)
+			{
+				o_f<<"*";
+			}
+			o_f<<firstNames[i]<<"*"<<lastNames[i];
+			for(k=0;k<(38 -strlen(firstNames[i]) - strlen(lastNames[i]) );k++)
+			{
+				o_f<<"*";
+			}
+			o_f<<endl;
+		}
+	}
+	else if(w==1)
+	{
+		SIMPLE_REPORT(x,y,z);
+	}
+	o_f<<"******* END REPORT"<<endl;
 }
