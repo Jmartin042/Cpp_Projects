@@ -290,10 +290,10 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_3/p3.h",
+					"file": "/home/ee259d15/pro_2/p2.h",
 					"settings":
 					{
-						"buffer_size": 3704,
+						"buffer_size": 4978,
 						"line_ending": "Unix"
 					}
 				}
@@ -330,11 +330,12 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_2/main2_3.cc",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_2/p2.h",
 				"/home/ee259d15/pro_3/studentNames.txt",
 				"/home/ee259d15/pro_3/maintest.cc",
 				"/home/ee259d15/pro_3/output.txt",
-				"/home/ee259d15/pro_3/p3.h",
-				"/home/ee259d15/pro_2/p2.h",
 				"/home/ee259d15/pro_3/main3_3.cc",
 				"/home/ee259d15/pro_3/main3_5.cc",
 				"/home/ee259d15/pro_3/main3_4.cc",
@@ -359,7 +360,6 @@
 				"/home/ee259d15/pro_2/out_2_expected_2.txt",
 				"/home/ee259d15/pro_2/out_2_expected_1.txt",
 				"/home/ee259d15/pro_2/main2_4.cc",
-				"/home/ee259d15/pro_2/main2_3.cc",
 				"/home/ee259d15/pro_2/main2_2.cc",
 				"/home/ee259d15/pro_2/main2_1.cc",
 				"/home/ee259d15/pro_2/skel_p2.h",
@@ -435,19 +435,19 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_3/p3.h",
+							"file": "/home/ee259d15/pro_2/p2.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 3704,
+								"buffer_size": 4978,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										643,
+										643
 									]
 								],
 								"settings":
@@ -455,7 +455,7 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 1890.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -500,7 +500,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,829,0,1919,1144,1920,1200",
+			"position": "0,0,0,0,0,4317,1086,5281,1758,5760,2160",
 			"project": "",
 			"replace":
 			{
