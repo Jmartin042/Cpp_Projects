@@ -196,7 +196,7 @@ GRADES::VERIFY( char*F, char*L)
 void
 GRADES::REPORT(int w, int x, int y, int z)
 {	// your code goes below:
-	// x is ID, y is pin, z is exam w is an addition parameter
+	// x is ID, y is pin, z is exam, w is an addition parameter
 	o_f<<"******* START REPORT"<<endl;
 	int i,j,k;
 	if( x<0 || x>=9999 || y<0 || y>=100 || z<0 || z>=e || w>1||(w==0 &&( w!=x || w!=y || w!=z)))
