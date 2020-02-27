@@ -6,7 +6,8 @@
 // EE259 SECTION (DAY/EVE): day and night 
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_1/sample_p1.h"
+//#include "/mnt/ee259dir/tools/pro_1/sample_p1.h"
+#include "/home/jmartin042/ee259d15/test/pro_1/sample_p1.h" //my own computer, sample file
 
 using namespace std;
 

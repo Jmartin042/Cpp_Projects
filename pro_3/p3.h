@@ -6,11 +6,11 @@
 // EE259 SECTION (DAY/EVE):DAY
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_2/sample_p2.h" //centos prof file
+//#include "/mnt/ee259dir/tools/pro_2/sample_p2.h" //centos prof file
 //#include "/home/ee259d15/pro_2/p2.h" // centos my file
 
 //#include "/home/jmartin042/ee259d15/test/pro_2/p2.h" //my own computer my own file
-//#include "/home/jmartin042/ee259d15/test/pro_2/sample_p2.h" //my own computer, sample file
+#include "/home/jmartin042/ee259d15/test/pro_2/sample_p2.h" //my own computer, sample file
 
 #include "string.h"
 
