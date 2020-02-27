@@ -1,11 +1,3 @@
-#+1582672850
-git push origin master
-#+1582672867
-git status
-#+1582682323
-cd pro_2
-#+1582682330
-subl p2.h
 #+1582682345
 c++ main2_1.cc
 #+1582682364
@@ -32,9 +24,17 @@ a.out
 diff -w output.txt out_2_expected_5.txt
 #+1582682423
 submit
-#+1582682475
-ls
 #+1582682487
 subl
-#+1582682518
+#+1582690320
+ls
+#+1582690367
+git add .
+#+1582690377
+git commit -m "new"
+#+1582690412
+git push origin master
+#+1582690434
+git status
+#+1582690437
 exit
