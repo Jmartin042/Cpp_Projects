@@ -119,7 +119,7 @@ SIMPLE_GRADES::SIMPLE_MAX(int x) // another method;
 	else
 	{
 		max=exam_grades[0][x];
-		for ( i = 1; i < e; i++)//finds max and places it into max
+		for ( i = 1; i < n; i++)//finds max and places it into max it should be unti i<n
 		{		
 			if(max<exam_grades[i][x])
 			{

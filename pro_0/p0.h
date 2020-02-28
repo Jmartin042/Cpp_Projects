@@ -45,8 +45,8 @@ ofstream o_f("output.txt", ios::out);
 SIMPLEST_GRADES::SIMPLEST_GRADES(int x, int y)
 {
 	int i, j;
-	n = x;
-	e = y;
+	n = x; //students
+	e = y; //exams
 	i_f.open("studentGrades.txt", ios::in); // open input file;
 	for(i =0; i < n; i++)
 	{
