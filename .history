@@ -1,40 +1,40 @@
-#+1582682345
-c++ main2_1.cc
-#+1582682364
-diff -w output.txt out_2_expected_1.txt
-#+1582682368
-c++ main2_2.cc
-#+1582682373
-diff -w output.txt out_2_expected_2.txt
-#+1582682380
-c++ main2_3\.cc
-#+1582682384
-c++ main2_3.cc
-#+1582682397
-diff -w output.txt out_2_expected_3.txt
-#+1582682401
-c++ main2_4.cc
-#+1582682409
-diff -w output.txt out_2_expected_4.txt
-#+1582682412
-c++ main2_5.cc
-#+1582682413
+#+1582770470
+diff -w output.txt out_3_expected_1.txt
+#+1582770474
+c++ main3_2.cc
+#+1582770480
+diff -w output.txt out_3_expected_2.txt
+#+1582770490
+c++ main3_3.cc
+#+1582770497
+diff -w output.txt out_3_expected_3.txt
+#+1582770501
+c++ main3_4.cc
+#+1582770538
+diff -w output.txt out_3_expected_4.txt
+#+1582770544
+c++ main3_5.cc
+#+1582770546
 a.out
-#+1582682418
-diff -w output.txt out_2_expected_5.txt
-#+1582682423
-submit
-#+1582682487
-subl
-#+1582690320
+#+1582770553
+diff -w output.txt out_3_expected_5.txt
+#+1582770846
+cd pro_2
+#+1582770857
+subl sample_p2.h
+#+1582772069
+cd
+#+1582772070
 ls
-#+1582690367
+#+1582772445
+git commit push origin master
+#+1582772631
 git add .
-#+1582690377
-git commit -m "new"
-#+1582690412
+#+1582772654
+git commit -m "newsample"
+#+1582772672
 git push origin master
-#+1582690434
+#+1582772752
 git status
-#+1582690437
+#+1582772756
 exit
