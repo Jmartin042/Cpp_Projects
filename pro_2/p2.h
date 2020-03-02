@@ -49,7 +49,7 @@ SIMPLE_GRADES::SIMPLE_GRADES(int x, int y)
 {
 	int i;
 	// below, open input file for pin and read its contents:
-	i_f.open("studentPins.txt", ios::in); // open input file;
+	i_f.open("studentPins.txt", ios::in); // open input file, test file: studentPinsTest.txt
 	for(i =0; i < n; i++)
 	{
 		i_f >> pin[i];
@@ -107,23 +107,23 @@ SIMPLE_GRADES::SIMPLE_SORT(int x)
 }
 
 void 
-SIMPLE_GRADES::SIMPLE_MAX(int x) // another method;
+SIMPLE_GRADES::SIMPLE_MAX(int x) // another method
 {
 	// your code goes below:
 	int max,i;
 	o_f<<"+++++ START SIMPLE_MAX"<<endl;
-	if(x<0 || x>e)
+	if(x<0 || x>=e)//x must be valid exam, post grade edit: changed from x>e to x>=e
 	{
 		o_f<<"+++++ INPUT ERROR"<<endl;	
 	}
 	else
 	{
-		max=exam_grades[0][x];
-		for ( i = 1; i < n; i++)//finds max and places it into max it should be unti i<n
+		max=exam_grades[0][x];// initializes max to first element of array
+		for ( i = 0; i < n; i++)//comapres to rest of array, post grade edit: changed from i=1 to i=0
 		{		
-			if(max<exam_grades[i][x])
+			if(max < exam_grades[i][x])
 			{
-				max=exam_grades[i][x];
+				max = exam_grades[i][x];
 			}
 			else{}
 		}

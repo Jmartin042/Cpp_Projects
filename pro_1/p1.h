@@ -8,8 +8,8 @@
 // My file   "/home/ee259d15/pro_0/p0.h" 
 // professor file  "/mnt/ee259dir/tools/pro_0/sample_p0.h"
 
-//#include "/mnt/ee259dir/tools/pro_0/sample_p0.h" //centos prof file
-#include "/home/ee259d15/pro_0/sample_p0.h" //centos my directory sample
+#include "/mnt/ee259dir/tools/pro_0/sample_p0.h" //centos prof file
+//#include "/home/ee259d15/pro_0/sample_p0.h" //centos my directory sample
 //#include "/home/jmartin042/ee259d15/test/pro_0/sample_p0.h" // my own computer, professor file
 //#include "/home/jmartin042/ee259d15/test/pro_0/p0.h" // my own computer, my own file
 using namespace std;
@@ -60,7 +60,7 @@ SIMPLER_GRADES::SIMPLER_LIST(int x)
 		for(i =0; i < n; i++)
 		{
 			o_f<<id[i]<<"	";
-			for(j = 0 ;j < e; j++)
+			for(j = 0 ;j < n; j++)// post grade edit:changed from j<e to j<n
 			{
 				if(x==j)
 				{
@@ -85,7 +85,7 @@ SIMPLER_GRADES::SIMPLER_FIND(int x, int y)
 	int found=0;
 	int found_pos;
 	o_f<<"*** START SIMPLER_FIND"<<endl;
-	if((y<0 || y>=e) || (x>=9999 || x<=0))//new update made to x conditions, added "="
+	if((y<0 || y>=e) || (x>=9999 || x<=0))//post grade: x conditions, added "=" from spec sheet
 	{
 		o_f<<"*** INPUT ERROR"<<endl;
 	}

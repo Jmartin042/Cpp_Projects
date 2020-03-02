@@ -47,7 +47,7 @@ SIMPLEST_GRADES::SIMPLEST_GRADES(int x, int y)
 	int i, j;
 	n = x; //students
 	e = y; //exams
-	i_f.open("studentGrades.txt", ios::in); // open input file;
+	i_f.open("studentGrades.txt", ios::in); // open input file; or test file: studentGradesTest.txt
 	for(i =0; i < n; i++)
 	{
 		i_f >> id[i];
@@ -67,7 +67,7 @@ SIMPLEST_GRADES::SIMPLEST_LIST(int x)
 	o_f << "+ START SIMPLEST_LIST" << endl;
 	int i;
 	int j;
-	if(x==1)
+	if(x==1)// IDs
 	{
 		o_f << "+ STUDENT IDS:" << endl;
 		for(i =0; i < n; i++)
