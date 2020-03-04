@@ -9,7 +9,7 @@ int main ()
 	//g.VERIFY("KATE", "OGGEN"); // verify student;
 	//g.VERIFY("JONATHAN", "RAYA"); // no such student;
 	//g.VERIFY("ASILEM", "RAYA");
-	//g.REPORT(1, 2222, 22, 0); // report the grade for id 3333 pin 33 exam 0;
-	g.REPORT(0, 0, 0, 0); // report all grades;
+	g.REPORT(0, 0, 0, 0); // report the grade for id 3333 pin 33 exam 0;
+	//g.REPORT(0, 0, 0, 0); // report all grades;
         return 0;
 }

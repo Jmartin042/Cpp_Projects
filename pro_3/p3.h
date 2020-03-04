@@ -199,18 +199,16 @@ GRADES::REPORT(int w, int x, int y, int z)
 	// x is ID, y is pin, z is exam, w is an addition parameter
 	o_f<<"******* START REPORT"<<endl;
 	int i,j,k;
-	if( x<0 || x>=9999 || y<0 || y>=100 || z<0 || z>=e || w>1||(w==0 &&( w!=x || w!=y || w!=z)))
+	if( x<0 || x>=9999 || y<0 || y>=100 || z<0 || z>=e || w>1|| w<0 || (w==0 &&( w!=x || w!=y || w!=z)))
 	{
 		o_f<<"******* INPUT ERROR"<<endl;
 	}
 	else if(x==0 && y==0 && z==0 && w==0)
 	{
 		for(i=0;i<n;i++)
-		{
-			for(j=0;j<11;j++)
-			{
-				o_f<<"*";
-			}
+		{	
+			o_f<<"***********";
+			
 			o_f<<firstNames[i]<<"*"<<lastNames[i];
 			for(k=0;k<(38 -strlen(firstNames[i]) - strlen(lastNames[i]) );k++)
 			{
