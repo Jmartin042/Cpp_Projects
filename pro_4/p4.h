@@ -1,12 +1,16 @@
 ///////////////////////////////////////////////////////////////
 // I UNDERSTAND THAT COPYING PROGRAMS FROM OTHERS WILL BE DEALT
 // WITH DISCIPLINARY RULES OF CCNY.
-// STUDENT NAME: 
-// CITYMAIL NAME: 
-// EE259 SECTION (DAY/EVE): 
+// STUDENT NAME: jonathan martinez
+// CITYMAIL NAME: jmartin042
+// EE259 SECTION (DAY/EVE): DAY
 ///////////////////////////////////////////////////////////////
 
-#include "/mnt/ee259dir/tools/pro_3/sample_p3.h"
+#include "/mnt/ee259dir/tools/pro_3/sample_p3.h" //centos prof file
+//#include "/home/ee259d15/pro_2/p2.h" // centos my file
+
+//#include "/home/jmartin042/ee259d15/test/pro_3/p3.h" //my own computer my own file
+//#include "/home/jmartin042/ee259d15/test/pro_3/sample_p3.h" //my own computer, sample file
 
 using namespace std;
 
