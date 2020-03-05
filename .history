@@ -1,18 +1,20 @@
 #+1583181980
 git commit -m "10"
-#+1583209308
-git status
-#+1583209694
-git add .
-#+1583209726
-git push origin master
-#+1583209936
-git pull origin master
 #+1583210075
 cd pro_1
-#+1583210077
-ls
 #+1583210086
 subl p1.h
-#+1583210121
+#+1583382342
+ls
+#+1583382363
+git pull origin master
+#+1583384397
+git add .
+#+1583384515
+git commit -m "test9"
+#+1583384521
+git push origin master
+#+1583384537
+git status
+#+1583384550
 exit
