@@ -1,0 +1,18 @@
+#+1583181980
+git commit -m "10"
+#+1583209308
+git status
+#+1583209694
+git add .
+#+1583209726
+git push origin master
+#+1583209936
+git pull origin master
+#+1583210075
+cd pro_1
+#+1583210077
+ls
+#+1583210086
+subl p1.h
+#+1583210121
+exit
