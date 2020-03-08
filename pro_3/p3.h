@@ -168,9 +168,9 @@ GRADES::VERIFY( char*F, char*L)
 	else
 	{
 		found=0;
-		for(i=0;i<n;i++)
+		for(i=0;i<n && found==0 ;i++)
 		{
-			if((strcmp(firstNames[i],F)==0) && (strcmp(lastNames[i],L)==0))
+			if( (strcmp(firstNames[i],F)==0) && (strcmp(lastNames[i],L)==0) )
 			{
 				found=1;
 				k=i;
@@ -198,7 +198,7 @@ GRADES::REPORT(int w, int x, int y, int z)
 {	// your code goes below:
 	// x is ID, y is pin, z is exam, w is an additional parameter
 	o_f<<"******* START REPORT"<<endl;
-	int i,j,k;
+	int i,j;// checks the ranges for x,y,z and checks for valid w, w can be 1 and 0 but only when the rest are zero as well
 	if( x<0 || x>=9999 || y<0 || y>=100 || z<0 || z>=e || w>1|| w<0 || (w==0 &&( w!=x || w!=y || w!=z)))
 	{
 		o_f<<"******* INPUT ERROR"<<endl;
@@ -210,7 +210,7 @@ GRADES::REPORT(int w, int x, int y, int z)
 			o_f<<"***********";
 			
 			o_f<<firstNames[i]<<"*"<<lastNames[i];
-			for(k=0;k<(38 -strlen(firstNames[i]) - strlen(lastNames[i]) );k++)
+			for(j=0;j<(38 -strlen(firstNames[i]) - strlen(lastNames[i]) );j++)
 			{
 				o_f<<"*";
 			}

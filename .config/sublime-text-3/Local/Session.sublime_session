@@ -327,34 +327,11 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_1/specPro1.txt",
+					"file": "/home/ee259d15/pro_3/p3.h",
 					"settings":
 					{
-						"buffer_size": 4270,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_2/sample_p2.h",
-					"settings":
-					{
-						"buffer_size": 5040,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_1/main1_1.cc",
-					"settings":
-					{
-						"buffer_size": 260,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_1/output.txt",
-					"settings":
-					{
-						"buffer_size": 491,
+						"buffer_size": 5083,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
@@ -391,24 +368,29 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_3/out_3_expected_4.txt",
+				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/output.txt",
+				"/home/ee259d15/pro_3/main3_5.cc",
+				"/home/ee259d15/pro_3/main3_4.cc",
+				"/home/ee259d15/pro_3/main3_1.cc",
+				"/home/ee259d15/pro_1/output.txt",
+				"/home/ee259d15/pro_1/main1_1.cc",
+				"/home/ee259d15/pro_2/sample_p2.h",
+				"/home/ee259d15/pro_1/specPro1.txt",
 				"/home/ee259d15/pro_0/sample_p0.h",
 				"/home/ee259d15/pro_1/p1.h",
 				"/home/ee259d15/pro_2/p2.h",
-				"/home/ee259d15/pro_2/sample_p2.h",
-				"/home/ee259d15/pro_3/output.txt",
 				"/home/ee259d15/pro_0/p0.h",
 				"/home/ee259d15/pro_3/p3.h",
 				"/home/ee259d15/pro_2/main2_3.cc",
 				"/home/ee259d15/pro_3/studentNames.txt",
 				"/home/ee259d15/pro_3/maintest.cc",
 				"/home/ee259d15/pro_3/main3_3.cc",
-				"/home/ee259d15/pro_3/main3_5.cc",
-				"/home/ee259d15/pro_3/main3_4.cc",
 				"/home/ee259d15/pro_3/out_3_expected_1.txt",
 				"/home/ee259d15/pro_3/specPro3.txt",
 				"/home/ee259d15/pro_3/out_3_expected_2.txt",
 				"/home/ee259d15/pro_3/main3_2.cc",
-				"/home/ee259d15/pro_3/main3_1.cc",
 				"/home/ee259d15/pro_2/specPro2.txt",
 				"/home/ee259d15/pro_2/output.txt",
 				"/home/ee259d15/pro_2/maintest.cc",
@@ -429,12 +411,10 @@
 				"/home/ee259d15/pro_2/p1.h",
 				"/home/ee259d15/pro_0/main0_1.cc",
 				"/home/ee259d15/pro_1/studentGrades.txt",
-				"/home/ee259d15/pro_1/output.txt",
 				"/home/ee259d15/pro_1/out_1_expected_2.txt",
 				"/home/ee259d15/pro_1/out_1_expected_1.txt",
 				"/home/ee259d15/pro_1/out_1_expected_4.txt",
 				"/home/ee259d15/pro_1/main1_4.cc",
-				"/home/ee259d15/pro_1/specPro1.txt",
 				"/home/ee259d15/pro_1/main1_3.cc",
 				"/home/ee259d15/pro_1/main1_2.cc",
 				"/home/ee259d15/pro_0/specPro0.txt",
@@ -442,7 +422,6 @@
 				"/home/ee259d15/pro_0/out_0_expected_4.txt",
 				"/home/ee259d15/pro_0/output.txt",
 				"/home/ee259d15/pro_0/main0_4.cc",
-				"/home/ee259d15/pro_1/main1_1.cc",
 				"/home/ee259d15/pro_0/out_0_expected_3.txt",
 				"/home/ee259d15/pro_1/out_1_expected_3.txt",
 				"/home/ee259d15/pro_0/out_0_expected_5.txt",
@@ -497,77 +476,19 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_1/specPro1.txt",
+							"file": "/home/ee259d15/pro_3/p3.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4270,
+								"buffer_size": 5083,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3319,
-										3319
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 324.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/ee259d15/pro_2/sample_p2.h",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 5040,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 2916.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/ee259d15/pro_1/main1_1.cc",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 260,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										260,
-										260
+										4980,
+										4980
 									]
 								],
 								"settings":
@@ -575,38 +496,10 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 3294.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/home/ee259d15/pro_1/output.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 491,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -648,7 +541,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,23,1368,872,1368,912",
+			"position": "0,0,0,0,0,3937,896,5305,1884,5760,2160",
 			"project": "",
 			"replace":
 			{

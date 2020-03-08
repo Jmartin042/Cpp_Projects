@@ -4,17 +4,27 @@ git commit -m "10"
 cd pro_1
 #+1583210086
 subl p1.h
-#+1583382342
-ls
 #+1583382363
 git pull origin master
-#+1583384397
-git add .
 #+1583384515
 git commit -m "test9"
-#+1583384521
-git push origin master
-#+1583384537
-git status
 #+1583384550
 exit
+#+1583440937
+mkdir pro_4
+#+1583440950
+cd pro_4
+#+1583441025
+cp /mnt/ee259dir/tools/pro_4/* .
+#+1583441027
+ls
+#+1583441072
+cd
+#+1583441104
+git add .
+#+1583441121
+git commit -m "pro4"
+#+1583441131
+git push origin master
+#+1583441146
+git status
