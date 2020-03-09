@@ -7,9 +7,9 @@
 ///////////////////////////////////////////////////////////////
 
 //#include "/mnt/ee259dir/tools/pro_3/sample_p3.h" //centos prof file
-//#include "/home/ee259d15/pro_3/p3.h" // centos my file
+#include "/home/ee259d15/pro_3/p3.h" // centos my file
 
-#include "/home/jmartin042/ee259d15/test/pro_3/p3.h" //my own computer my own file
+//#include "/home/jmartin042/ee259d15/test/pro_3/p3.h" //my own computer my own file
 //#include "/home/jmartin042/ee259d15/test/pro_3/sample_p3.h" //my own computer, sample file
 
 using namespace std;
