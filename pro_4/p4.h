@@ -7,9 +7,9 @@
 ///////////////////////////////////////////////////////////////
 
 //#include "/mnt/ee259dir/tools/pro_3/sample_p3.h" //centos prof file
-#include "/home/ee259d15/pro_3/p3.h" // centos my file
+//#include "/home/ee259d15/pro_3/p3.h" // centos my file
 
-//#include "/home/jmartin042/ee259d15/test/pro_3/p3.h" //my own computer my own file
+#include "/home/jmartin042/ee259d15/test/pro_3/p3.h" //my own computer my own file
 //#include "/home/jmartin042/ee259d15/test/pro_3/sample_p3.h" //my own computer, sample file
 
 using namespace std;
@@ -163,7 +163,6 @@ OVERLOADED_GRADES::operator -= (int x)
 				pin[i]=pin[i+1];
 				strcpy(firstNames[i], firstNames[i+1]);
 				strcpy(lastNames[i], lastNames[i+1]);
-
 			}
 			n--;
 			o_f<<"+++++++++ STUDENT WITH ID "<<x<<" IS REMOVED FROM "<<objName<<endl;
@@ -173,11 +172,8 @@ OVERLOADED_GRADES::operator -= (int x)
 		{
 			o_f<<"+++++++++ NO STUDENT WITH ID "<<x<<" FROM "<<objName<<endl;
 		}		
-
 	}
-
 	o_f<<"+++++++++ END OVERLOADED OPERATOR -="<<endl;
-	
 }
 
 void
@@ -217,7 +213,7 @@ OVERLOADED_GRADES::operator + (OVERLOADED_GRADES obj2)
 	int i,j;
 	o_f<<"+++++++++ START OVERLOADED OPERATOR +"<<endl;
 	
-	obj.n=n;  //original object into temporary object
+	obj.n=n;  //refrence object into temporary object
 	obj.e=e;
 
 	for(i=0;i<n;i++)
@@ -235,7 +231,7 @@ OVERLOADED_GRADES::operator + (OVERLOADED_GRADES obj2)
 	} //end of original object into temporary
 	o_f<<"+++++++++ "<<n<<" ELEMENTS IN "<<objName<<" ARE ADDED TO "<<obj.objName<<endl;
 
-	obj.n=obj.n+obj2.n; //=6
+	obj.n=obj.n+obj2.n; // second object into temporary object
 	obj.e=obj2.e;
 
 	for(i=n; i<obj.n; i++)
