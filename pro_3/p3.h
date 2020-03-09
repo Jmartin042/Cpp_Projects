@@ -73,7 +73,7 @@ GRADES::LIST(int x)
 	{
 		for ( i=0; i<n; i++)
 		{
-			o_f<<firstNames[i]<<" "<<lastNames[i]<<"   "<<id[i]<<"  ";
+			o_f<<firstNames[i]<<"	"<<lastNames[i]<<"	"<<id[i]<<"	";
 			for(j=0 ; j<e ;j++)
 			{
 				o_f<<exam_grades[i][j]<<" ";
@@ -85,7 +85,7 @@ GRADES::LIST(int x)
 	{
 		for ( i=0; i<n; i++)
 		{
-			o_f<<firstNames[i]<<" "<<lastNames[i]<<"   "<<id[i];
+			o_f<<firstNames[i]<<"	"<<lastNames[i]<<"	"<<id[i];
 			o_f<<endl;
 		}
 	}
