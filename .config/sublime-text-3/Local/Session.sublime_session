@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 30,
+	"last_window_id": 31,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1008.0,
+		"new_window_height": 1144.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -271,7 +271,7 @@
 			{
 			}
 		},
-		"new_window_width": 974.0
+		"new_window_width": 959.0
 	},
 	"windows":
 	[
@@ -349,10 +349,38 @@
 			"buffers":
 			[
 				{
+					"file": "/home/ee259d15/pro_4/main4_5.cc",
+					"settings":
+					{
+						"buffer_size": 317,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_4/p4.h",
+					"settings":
+					{
+						"buffer_size": 6277,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
 					"file": "/home/ee259d15/pro_3/p3.h",
 					"settings":
 					{
 						"buffer_size": 5078,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 4 STUDENTS, EACH WITH 3 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 4 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 4 STUDENTS EACH WITH 3 EXAMS.\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 2 STUDENTS, EACH WITH 3 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 2 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 2 STUDENTS EACH WITH 3 EXAMS.\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 0 STUDENTS, EACH WITH 0 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 0 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 0 STUDENTS EACH WITH 0 EXAMS.\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G1:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \nNILAY\tKENT\t2222\t20 30 70 \nMONALISA\tSCHONBRUN\t4444\t60 50 70 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G2:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G3:\n******* START LIST\n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 0 STUDENTS, EACH WITH 0 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 0 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 0 STUDENTS EACH WITH 0 EXAMS.\n+++++++++ START OVERLOADED OPERATOR +\n+++++++++ 4 ELEMENTS IN G1 ARE ADDED TO TempOBJ\n+++++++++ 2 ELEMENTS IN G2 ARE ADDED TO TempOBJ\n+++++++++ RETURNING TempOBJ WITH 6 ELEMENTS\n+++++++++ END OVERLOADED OPERATOR +\n+++++++++ START OVERLOADED OPERATOR =\n+++++++++ ELEMENTS IN TempOBJ ARE ASSIGNED TO G3\n+++++++++ END OVERLOADED OPERATOR =\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G1:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \nNILAY\tKENT\t2222\t20 30 70 \nMONALISA\tSCHONBRUN\t4444\t60 50 70 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G2:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G3:\n******* START LIST\nKATE\tOGGEN\t1111\t\nASILEM\tRAYU\t3333\t\nNILAY\tKENT\t2222\t\nMONALISA\tSCHONBRUN\t4444\t\nKATE\tOGGEN\t1111\t\nASILEM\tRAYU\t3333\t\n******* END LIST\n+++++++++ END OVERLOADED_LIST\n",
+					"file": "/home/ee259d15/pro_4/out_4_expectedP5.txt",
+					"file_size": 2949,
+					"file_write_time": 132279146254155446,
+					"settings":
+					{
+						"buffer_size": 2949,
 						"line_ending": "Unix"
 					}
 				}
@@ -389,15 +417,16 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/p3.h",
 				"/home/ee259d15/pro_1/p1.h",
 				"/home/ee259d15/pro_2/p2.h",
-				"/home/ee259d15/pro_3/p3.h",
 				"/home/ee259d15/pro_4/main4_2.cc",
 				"/home/ee259d15/pro_4/main4_1.cc",
 				"/home/ee259d15/pro_4/specPro4.txt",
 				"/home/ee259d15/p4.h",
 				"/home/ee259d15/pro_3/out_3_expected_4.txt",
-				"/home/ee259d15/pro_3/out_3_expected_5.txt",
 				"/home/ee259d15/pro_3/output.txt",
 				"/home/ee259d15/pro_3/main3_5.cc",
 				"/home/ee259d15/pro_3/main3_4.cc",
@@ -460,7 +489,7 @@
 			],
 			"find":
 			{
-				"height": 31.0
+				"height": 27.0
 			},
 			"find_in_files":
 			{
@@ -496,11 +525,68 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 2,
 					"sheets":
 					[
 						{
 							"buffer": 0,
+							"file": "/home/ee259d15/pro_4/main4_5.cc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 317,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										317,
+										317
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ee259d15/pro_4/p4.h",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6277,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5784,
+										5784
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3618.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
 							"file": "/home/ee259d15/pro_3/p3.h",
 							"semi_transient": false,
 							"settings":
@@ -512,8 +598,8 @@
 								"selection":
 								[
 									[
-										1521,
-										1521
+										2191,
+										2191
 									]
 								],
 								"settings":
@@ -522,10 +608,38 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 216.0,
+								"translation.y": 3402.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/ee259d15/pro_4/out_4_expectedP5.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2949,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2081,
+										2081
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 378.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
 							"type": "text"
 						}
 					]
@@ -533,7 +647,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 31.0
+				"height": 27.0
 			},
 			"input":
 			{
@@ -567,11 +681,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,849,94,1823,1102,5760,2160",
+			"position": "0,0,0,0,0,909,0,1919,1144,1920,1200",
 			"project": "",
 			"replace":
 			{
-				"height": 58.0
+				"height": 50.0
 			},
 			"save_all_on_build": true,
 			"select_file":

@@ -66,19 +66,25 @@ OVERLOADED_GRADES::OVERLOADED_LIST(int x)
 { // your code goes below:
 
 	o_f<<"+++++++++ START OVERLOADED_LIST"<<endl;
-	o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
-
+	
 	if(x==0)
 	{
+		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
 		LIST(0);
 	}
 	else if(x==1)
-	{
+	{	
+		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
 		LIST(5);
 	}
 	else if(x==2)
 	{
+		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
 		LIST(-5);
+	}
+	else
+	{
+		o_f<<"+++++++++ INPUT ERROR"<<endl;
 	}
 
 	o_f<<"+++++++++ END OVERLOADED_LIST"<<endl;
