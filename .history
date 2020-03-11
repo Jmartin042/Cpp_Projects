@@ -1,40 +1,40 @@
-#+1583871238
-cd pro_4
-#+1583872601
-c++ main4_1.cc
-#+1583872608
+#+1583874469
+git add -A
+#+1583874477
+git commit -m "psh"
+#+1583888187
+pro_3
+#+1583888340
+c++ main3_1.cc
+#+1583888360
+diff- w output.txt out_3_expected_1.txt
+#+1583888372
 diff -w output.txt out_3_expected_1.txt
-#+1583872616
-diff -w output.txt out_4_expected_1.txt
-#+1583872619
-c++ main4_2.cc
-#+1583872625
-diff -w output.txt out_4_expected_2.txt
-#+1583872628
-c++ main4_3.cc
-#+1583872635
-diff -w output.txt out_4_expected_3.txt
-#+1583872638
-c++ main4_4.cc
-#+1583872655
-diff -w output.txt out_4_expected_4.txt
-#+1583872758
-cp /mnt/ee259dir/tools/pro_4/out_4_expected_5.txt .
-#+1583872784
-rm out_4_expectedP5.txt
-#+1583872794
-c++ main4_5.cc
-#+1583872796
+#+1583888384
+c++ main3_2.cc
+#+1583888389
+diff -w output.txt out_3_expected_2.txt
+#+1583888392
+c++ main3_3.cc
+#+1583888396
+diff -w output.txt out_3_expected_3.txt
+#+1583888399
+c++ main3_4.cc
+#+1583888404
+diff -w output.txt out_3_expected_4.txt
+#+1583888408
+c++ main3_5.cc
+#+1583888411
 a.out
-#+1583872812
-diff -w output.txt out_4_expected_5.txt
-#+1583873634
-cd ..
-#+1583873636
-ls
-#+1583873639
-cd pro_3
-#+1583873642
+#+1583888415
+diff -w output.txt out_3_expected_5.txt
+#+1583888417
 submit
-#+1583873931
+#+1583890135
+cd pro_3
+#+1583890136
+ls
+#+1583890141
+subl p3.h
+#+1583890251
 exit

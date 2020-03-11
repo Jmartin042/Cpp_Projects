@@ -372,17 +372,6 @@
 						"buffer_size": 5078,
 						"line_ending": "Unix"
 					}
-				},
-				{
-					"contents": "+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 4 STUDENTS, EACH WITH 3 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 4 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 4 STUDENTS EACH WITH 3 EXAMS.\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 2 STUDENTS, EACH WITH 3 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 2 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 2 STUDENTS EACH WITH 3 EXAMS.\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 0 STUDENTS, EACH WITH 0 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 0 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 0 STUDENTS EACH WITH 0 EXAMS.\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G1:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \nNILAY\tKENT\t2222\t20 30 70 \nMONALISA\tSCHONBRUN\t4444\t60 50 70 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G2:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G3:\n******* START LIST\n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+ CONSTRUCTOR INSTANTIATED AN OBJECT WITH 0 STUDENTS, EACH WITH 0 EXAMS.\n*** SIMPLER_GRADES CONSTRUCTOR INSTANTIATED A NEW OBJECT.\n+++++ SIMPLE_GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH PIN VALUES.\n******* GRADES CONSTRUCTOR CREATES A NEW OBJECT WITH NAMES OF 0 STUDENTS.\n+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH 0 STUDENTS EACH WITH 0 EXAMS.\n+++++++++ START OVERLOADED OPERATOR +\n+++++++++ 4 ELEMENTS IN G1 ARE ADDED TO TempOBJ\n+++++++++ 2 ELEMENTS IN G2 ARE ADDED TO TempOBJ\n+++++++++ RETURNING TempOBJ WITH 6 ELEMENTS\n+++++++++ END OVERLOADED OPERATOR +\n+++++++++ START OVERLOADED OPERATOR =\n+++++++++ ELEMENTS IN TempOBJ ARE ASSIGNED TO G3\n+++++++++ END OVERLOADED OPERATOR =\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G1:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \nNILAY\tKENT\t2222\t20 30 70 \nMONALISA\tSCHONBRUN\t4444\t60 50 70 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G2:\n******* START LIST\nKATE\tOGGEN\t1111\t90 90 80 \nASILEM\tRAYU\t3333\t80 70 60 \n******* END LIST\n+++++++++ END OVERLOADED_LIST\n+++++++++ START OVERLOADED_LIST\n+++++++++ ELEMENTS OF G3:\n******* START LIST\nKATE\tOGGEN\t1111\t\nASILEM\tRAYU\t3333\t\nNILAY\tKENT\t2222\t\nMONALISA\tSCHONBRUN\t4444\t\nKATE\tOGGEN\t1111\t\nASILEM\tRAYU\t3333\t\n******* END LIST\n+++++++++ END OVERLOADED_LIST\n",
-					"file": "/home/ee259d15/pro_4/out_4_expectedP5.txt",
-					"file_size": 2949,
-					"file_write_time": 132279146254155446,
-					"settings":
-					{
-						"buffer_size": 2949,
-						"line_ending": "Unix"
-					}
 				}
 			],
 			"build_system": "",
@@ -417,6 +406,7 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
 				"/home/ee259d15/pro_4/p4.h",
 				"/home/ee259d15/pro_3/out_3_expected_5.txt",
 				"/home/ee259d15/pro_3/p3.h",
@@ -525,7 +515,7 @@
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -569,8 +559,8 @@
 								"selection":
 								[
 									[
-										5784,
-										5784
+										2722,
+										2722
 									]
 								],
 								"settings":
@@ -579,10 +569,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 3618.0,
+								"translation.y": 1512.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						},
 						{
@@ -598,8 +588,8 @@
 								"selection":
 								[
 									[
-										2191,
-										2191
+										4812,
+										4812
 									]
 								],
 								"settings":
@@ -608,38 +598,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 3402.0,
+								"translation.y": 2862.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/home/ee259d15/pro_4/out_4_expectedP5.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2949,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2081,
-										2081
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 378.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
+							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -681,7 +643,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,909,0,1919,1144,1920,1200",
+			"position": "0,1,0,0,0,0,0,0,0,5760,2160",
 			"project": "",
 			"replace":
 			{
