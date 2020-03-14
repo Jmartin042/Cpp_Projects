@@ -254,7 +254,7 @@ OVERLOADED_GRADES::operator + (OVERLOADED_GRADES obj2)
 		strcpy(obj.lastNames[i], obj2.lastNames[i-n]);
 	}
 	o_f<<"+++++++++ "<<obj2.n<<" ELEMENTS IN "<<obj2.objName<<" ARE ADDED TO "<<obj.objName<<endl;
-	o_f<<"+++++++++ RETURNING "<<obj.objName<<" WITH "<<obj.n<<" ELEMENTS"<<endl;
+	o_f<<"+++++++++ RETURNING "<<obj.objName<<" WITH "<<obj.n<<" STUDENTS"<<endl;
 	o_f<<"+++++++++ END OVERLOADED OPERATOR +"<<endl;
 
 	return obj; // return the temporary object;

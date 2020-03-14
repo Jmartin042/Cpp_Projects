@@ -1,0 +1,1123 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 32,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 966.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"obj",
+						"OBJECT"
+					],
+					[
+						"ob",
+						"objName"
+					],
+					[
+						"la",
+						"lastNames"
+					],
+					[
+						"min",
+						"min_pos"
+					],
+					[
+						"last",
+						"lastNames"
+					],
+					[
+						"first",
+						"firstNames"
+					],
+					[
+						"pin",
+						"pin_pos"
+					],
+					[
+						"exam",
+						"exam_grades"
+					],
+					[
+						"for",
+						"for\tFor Loop"
+					],
+					[
+						"grade",
+						"exam_grades"
+					],
+					[
+						"found",
+						"found_pos"
+					],
+					[
+						"SIMPLER",
+						"SIMPLER_LIST"
+					],
+					[
+						"S",
+						"SIMPLER_GRADES"
+					],
+					[
+						"out",
+						"out_f"
+					],
+					[
+						"if",
+						"i_f"
+					],
+					[
+						"studen",
+						"studentGrades"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ee259d15/pro_3/sample_p3.h",
+				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_1/p1.h",
+				"/home/ee259d15/pro_2/p2.h",
+				"/home/ee259d15/pro_4/main4_2.cc",
+				"/home/ee259d15/pro_4/main4_1.cc",
+				"/home/ee259d15/pro_4/specPro4.txt",
+				"/home/ee259d15/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_4.txt",
+				"/home/ee259d15/pro_3/output.txt",
+				"/home/ee259d15/pro_3/main3_5.cc",
+				"/home/ee259d15/pro_3/main3_4.cc",
+				"/home/ee259d15/pro_3/main3_1.cc",
+				"/home/ee259d15/pro_1/output.txt",
+				"/home/ee259d15/pro_1/main1_1.cc",
+				"/home/ee259d15/pro_2/sample_p2.h",
+				"/home/ee259d15/pro_1/specPro1.txt",
+				"/home/ee259d15/pro_0/sample_p0.h",
+				"/home/ee259d15/pro_0/p0.h",
+				"/home/ee259d15/pro_2/main2_3.cc",
+				"/home/ee259d15/pro_3/studentNames.txt",
+				"/home/ee259d15/pro_3/maintest.cc",
+				"/home/ee259d15/pro_3/main3_3.cc",
+				"/home/ee259d15/pro_3/out_3_expected_1.txt",
+				"/home/ee259d15/pro_3/specPro3.txt",
+				"/home/ee259d15/pro_3/out_3_expected_2.txt",
+				"/home/ee259d15/pro_3/main3_2.cc",
+				"/home/ee259d15/pro_2/specPro2.txt",
+				"/home/ee259d15/pro_2/output.txt",
+				"/home/ee259d15/pro_2/maintest.cc",
+				"/home/ee259d15/pro_2/p0.h",
+				"/home/ee259d15/pro_2/out_2_expected_4.txt",
+				"/home/ee259d15/pro_1/sample_p1.h",
+				"/home/ee259d15/pro_2/out_2_expected_5.txt",
+				"/home/ee259d15/pro_2/main2_5.cc",
+				"/home/ee259d15/pro_2/studentGrades.txt",
+				"/home/ee259d15/pro_2/out_2_expected_3.txt",
+				"/home/ee259d15/pro_2/out_2_expected_2.txt",
+				"/home/ee259d15/pro_2/out_2_expected_1.txt",
+				"/home/ee259d15/pro_2/main2_4.cc",
+				"/home/ee259d15/pro_2/main2_2.cc",
+				"/home/ee259d15/pro_2/main2_1.cc",
+				"/home/ee259d15/pro_2/skel_p2.h",
+				"/home/ee259d15/pro_2/studentPins.txt",
+				"/home/ee259d15/pro_2/p1.h",
+				"/home/ee259d15/pro_0/main0_1.cc",
+				"/home/ee259d15/pro_1/studentGrades.txt",
+				"/home/ee259d15/pro_1/out_1_expected_2.txt",
+				"/home/ee259d15/pro_1/out_1_expected_1.txt",
+				"/home/ee259d15/pro_1/out_1_expected_4.txt",
+				"/home/ee259d15/pro_1/main1_4.cc",
+				"/home/ee259d15/pro_1/main1_3.cc",
+				"/home/ee259d15/pro_1/main1_2.cc",
+				"/home/ee259d15/pro_0/specPro0.txt",
+				"/home/ee259d15/pro_0/o0.h",
+				"/home/ee259d15/pro_0/out_0_expected_4.txt",
+				"/home/ee259d15/pro_0/output.txt",
+				"/home/ee259d15/pro_0/main0_4.cc",
+				"/home/ee259d15/pro_0/out_0_expected_3.txt",
+				"/home/ee259d15/pro_1/out_1_expected_3.txt",
+				"/home/ee259d15/pro_0/out_0_expected_5.txt",
+				"/home/ee259d15/pro_0/main0_5.cc",
+				"/home/ee259d15/pro_0/studentGrades.txt",
+				"/home/ee259d15/pro_0/main0_3.cc",
+				"/home/ee259d15/pro_0/main0_2.cc",
+				"/home/ee259d15/pro_0/skel_p0.h",
+				"/home/ee259d15/pro_0/a.out",
+				"/home/ee259d15/pro_0/out_0_expected_1.txt"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"];\n",
+					"out_f",
+					"out_f\n",
+					";\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"o_f"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 959.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"obj",
+						"OBJECT"
+					],
+					[
+						"ob",
+						"objName"
+					],
+					[
+						"la",
+						"lastNames"
+					],
+					[
+						"min",
+						"min_pos"
+					],
+					[
+						"last",
+						"lastNames"
+					],
+					[
+						"first",
+						"firstNames"
+					],
+					[
+						"pin",
+						"pin_pos"
+					],
+					[
+						"exam",
+						"exam_grades"
+					],
+					[
+						"for",
+						"for\tFor Loop"
+					],
+					[
+						"grade",
+						"exam_grades"
+					],
+					[
+						"found",
+						"found_pos"
+					],
+					[
+						"SIMPLER",
+						"SIMPLER_LIST"
+					],
+					[
+						"S",
+						"SIMPLER_GRADES"
+					],
+					[
+						"out",
+						"out_f"
+					],
+					[
+						"if",
+						"i_f"
+					],
+					[
+						"studen",
+						"studentGrades"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/ee259d15/pro_4/main4_5.cc",
+					"settings":
+					{
+						"buffer_size": 317,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_4/p4.h",
+					"settings":
+					{
+						"buffer_size": 6277,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_3/p3.h",
+					"settings":
+					{
+						"buffer_size": 5078,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ee259d15/pro_3/sample_p3.h",
+				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_1/p1.h",
+				"/home/ee259d15/pro_2/p2.h",
+				"/home/ee259d15/pro_4/main4_2.cc",
+				"/home/ee259d15/pro_4/main4_1.cc",
+				"/home/ee259d15/pro_4/specPro4.txt",
+				"/home/ee259d15/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_4.txt",
+				"/home/ee259d15/pro_3/output.txt",
+				"/home/ee259d15/pro_3/main3_5.cc",
+				"/home/ee259d15/pro_3/main3_4.cc",
+				"/home/ee259d15/pro_3/main3_1.cc",
+				"/home/ee259d15/pro_1/output.txt",
+				"/home/ee259d15/pro_1/main1_1.cc",
+				"/home/ee259d15/pro_2/sample_p2.h",
+				"/home/ee259d15/pro_1/specPro1.txt",
+				"/home/ee259d15/pro_0/sample_p0.h",
+				"/home/ee259d15/pro_0/p0.h",
+				"/home/ee259d15/pro_2/main2_3.cc",
+				"/home/ee259d15/pro_3/studentNames.txt",
+				"/home/ee259d15/pro_3/maintest.cc",
+				"/home/ee259d15/pro_3/main3_3.cc",
+				"/home/ee259d15/pro_3/out_3_expected_1.txt",
+				"/home/ee259d15/pro_3/specPro3.txt",
+				"/home/ee259d15/pro_3/out_3_expected_2.txt",
+				"/home/ee259d15/pro_3/main3_2.cc",
+				"/home/ee259d15/pro_2/specPro2.txt",
+				"/home/ee259d15/pro_2/output.txt",
+				"/home/ee259d15/pro_2/maintest.cc",
+				"/home/ee259d15/pro_2/p0.h",
+				"/home/ee259d15/pro_2/out_2_expected_4.txt",
+				"/home/ee259d15/pro_1/sample_p1.h",
+				"/home/ee259d15/pro_2/out_2_expected_5.txt",
+				"/home/ee259d15/pro_2/main2_5.cc",
+				"/home/ee259d15/pro_2/studentGrades.txt",
+				"/home/ee259d15/pro_2/out_2_expected_3.txt",
+				"/home/ee259d15/pro_2/out_2_expected_2.txt",
+				"/home/ee259d15/pro_2/out_2_expected_1.txt",
+				"/home/ee259d15/pro_2/main2_4.cc",
+				"/home/ee259d15/pro_2/main2_2.cc",
+				"/home/ee259d15/pro_2/main2_1.cc",
+				"/home/ee259d15/pro_2/skel_p2.h",
+				"/home/ee259d15/pro_2/studentPins.txt",
+				"/home/ee259d15/pro_2/p1.h",
+				"/home/ee259d15/pro_0/main0_1.cc",
+				"/home/ee259d15/pro_1/studentGrades.txt",
+				"/home/ee259d15/pro_1/out_1_expected_2.txt",
+				"/home/ee259d15/pro_1/out_1_expected_1.txt",
+				"/home/ee259d15/pro_1/out_1_expected_4.txt",
+				"/home/ee259d15/pro_1/main1_4.cc",
+				"/home/ee259d15/pro_1/main1_3.cc",
+				"/home/ee259d15/pro_1/main1_2.cc",
+				"/home/ee259d15/pro_0/specPro0.txt",
+				"/home/ee259d15/pro_0/o0.h",
+				"/home/ee259d15/pro_0/out_0_expected_4.txt",
+				"/home/ee259d15/pro_0/output.txt",
+				"/home/ee259d15/pro_0/main0_4.cc",
+				"/home/ee259d15/pro_0/out_0_expected_3.txt",
+				"/home/ee259d15/pro_1/out_1_expected_3.txt",
+				"/home/ee259d15/pro_0/out_0_expected_5.txt",
+				"/home/ee259d15/pro_0/main0_5.cc",
+				"/home/ee259d15/pro_0/studentGrades.txt",
+				"/home/ee259d15/pro_0/main0_3.cc",
+				"/home/ee259d15/pro_0/main0_2.cc",
+				"/home/ee259d15/pro_0/skel_p0.h",
+				"/home/ee259d15/pro_0/a.out",
+				"/home/ee259d15/pro_0/out_0_expected_1.txt"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"];\n",
+					"out_f",
+					"out_f\n",
+					";\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"o_f"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/ee259d15/pro_4/main4_5.cc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 317,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										317,
+										317
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ee259d15/pro_4/p4.h",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6277,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										6229,
+										6229
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3888.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/ee259d15/pro_3/p3.h",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 5078,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5014,
+										5014
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/C++/C++.sublime-syntax",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 3294.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,3903,894,4862,1860,5760,2160",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 30,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"obj",
+						"OBJECT"
+					],
+					[
+						"ob",
+						"objName"
+					],
+					[
+						"la",
+						"lastNames"
+					],
+					[
+						"min",
+						"min_pos"
+					],
+					[
+						"last",
+						"lastNames"
+					],
+					[
+						"first",
+						"firstNames"
+					],
+					[
+						"pin",
+						"pin_pos"
+					],
+					[
+						"exam",
+						"exam_grades"
+					],
+					[
+						"for",
+						"for\tFor Loop"
+					],
+					[
+						"grade",
+						"exam_grades"
+					],
+					[
+						"found",
+						"found_pos"
+					],
+					[
+						"SIMPLER",
+						"SIMPLER_LIST"
+					],
+					[
+						"S",
+						"SIMPLER_GRADES"
+					],
+					[
+						"out",
+						"out_f"
+					],
+					[
+						"if",
+						"i_f"
+					],
+					[
+						"studen",
+						"studentGrades"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/ee259d15/pro_4/output.txt",
+					"settings":
+					{
+						"buffer_size": 3003,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_4/out_4_expected_5.txt",
+					"settings":
+					{
+						"buffer_size": 3003,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_4/out_4_expected_4.txt",
+					"settings":
+					{
+						"buffer_size": 2397,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/ee259d15/pro_3/output.txt",
+				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/sample_p3.h",
+				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_1/p1.h",
+				"/home/ee259d15/pro_2/p2.h",
+				"/home/ee259d15/pro_4/main4_2.cc",
+				"/home/ee259d15/pro_4/main4_1.cc",
+				"/home/ee259d15/pro_4/specPro4.txt",
+				"/home/ee259d15/p4.h",
+				"/home/ee259d15/pro_3/out_3_expected_4.txt",
+				"/home/ee259d15/pro_3/main3_5.cc",
+				"/home/ee259d15/pro_3/main3_4.cc",
+				"/home/ee259d15/pro_3/main3_1.cc",
+				"/home/ee259d15/pro_1/output.txt",
+				"/home/ee259d15/pro_1/main1_1.cc",
+				"/home/ee259d15/pro_2/sample_p2.h",
+				"/home/ee259d15/pro_1/specPro1.txt",
+				"/home/ee259d15/pro_0/sample_p0.h",
+				"/home/ee259d15/pro_0/p0.h",
+				"/home/ee259d15/pro_2/main2_3.cc",
+				"/home/ee259d15/pro_3/studentNames.txt",
+				"/home/ee259d15/pro_3/maintest.cc",
+				"/home/ee259d15/pro_3/main3_3.cc",
+				"/home/ee259d15/pro_3/out_3_expected_1.txt",
+				"/home/ee259d15/pro_3/specPro3.txt",
+				"/home/ee259d15/pro_3/out_3_expected_2.txt",
+				"/home/ee259d15/pro_3/main3_2.cc",
+				"/home/ee259d15/pro_2/specPro2.txt",
+				"/home/ee259d15/pro_2/output.txt",
+				"/home/ee259d15/pro_2/maintest.cc",
+				"/home/ee259d15/pro_2/p0.h",
+				"/home/ee259d15/pro_2/out_2_expected_4.txt",
+				"/home/ee259d15/pro_1/sample_p1.h",
+				"/home/ee259d15/pro_2/out_2_expected_5.txt",
+				"/home/ee259d15/pro_2/main2_5.cc",
+				"/home/ee259d15/pro_2/studentGrades.txt",
+				"/home/ee259d15/pro_2/out_2_expected_3.txt",
+				"/home/ee259d15/pro_2/out_2_expected_2.txt",
+				"/home/ee259d15/pro_2/out_2_expected_1.txt",
+				"/home/ee259d15/pro_2/main2_4.cc",
+				"/home/ee259d15/pro_2/main2_2.cc",
+				"/home/ee259d15/pro_2/main2_1.cc",
+				"/home/ee259d15/pro_2/skel_p2.h",
+				"/home/ee259d15/pro_2/studentPins.txt",
+				"/home/ee259d15/pro_2/p1.h",
+				"/home/ee259d15/pro_0/main0_1.cc",
+				"/home/ee259d15/pro_1/studentGrades.txt",
+				"/home/ee259d15/pro_1/out_1_expected_2.txt",
+				"/home/ee259d15/pro_1/out_1_expected_1.txt",
+				"/home/ee259d15/pro_1/out_1_expected_4.txt",
+				"/home/ee259d15/pro_1/main1_4.cc",
+				"/home/ee259d15/pro_1/main1_3.cc",
+				"/home/ee259d15/pro_1/main1_2.cc",
+				"/home/ee259d15/pro_0/specPro0.txt",
+				"/home/ee259d15/pro_0/o0.h",
+				"/home/ee259d15/pro_0/out_0_expected_4.txt",
+				"/home/ee259d15/pro_0/output.txt",
+				"/home/ee259d15/pro_0/main0_4.cc",
+				"/home/ee259d15/pro_0/out_0_expected_3.txt",
+				"/home/ee259d15/pro_1/out_1_expected_3.txt",
+				"/home/ee259d15/pro_0/out_0_expected_5.txt",
+				"/home/ee259d15/pro_0/main0_5.cc",
+				"/home/ee259d15/pro_0/studentGrades.txt",
+				"/home/ee259d15/pro_0/main0_3.cc",
+				"/home/ee259d15/pro_0/main0_2.cc",
+				"/home/ee259d15/pro_0/skel_p0.h",
+				"/home/ee259d15/pro_0/a.out",
+				"/home/ee259d15/pro_0/out_0_expected_1.txt"
+			],
+			"find":
+			{
+				"height": 27.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"];\n",
+					"out_f",
+					"out_f\n",
+					";\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"o_f"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/ee259d15/pro_4/output.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3003,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3003,
+										3003
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ee259d15/pro_4/out_4_expected_5.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3003,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1539,
+										1539
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/ee259d15/pro_4/out_4_expected_4.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 2397,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1180,
+										1180
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 27.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,2618,153,3577,1984,5760,2160",
+			"project": "",
+			"replace":
+			{
+				"height": 50.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 32,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
