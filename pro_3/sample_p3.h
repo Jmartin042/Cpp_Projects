@@ -7,6 +7,8 @@
 ///////////////////////////////////////////////////////////////
 
 #include "/mnt/ee259dir/tools/pro_2/sample_p2.h"
+//#include "/home/jmartin042/ee259d15/test/pro_2/sample_p2.h" //my own computer, sample file
+
 #include "string.h"
 //#include "sample_p2.h"
 

@@ -59,6 +59,7 @@ OVERLOADED_GRADES:: OVERLOADED_GRADES(char * O_N, int x, int y)
 
 	strcpy(objName,O_N);
 	o_f<<"+++++++++ OVERLOADED_GRADES OBJECT IS CREATED WITH "<<x<<" STUDENTS EACH WITH "<<y<<" EXAMS."<<endl;
+
 }
 
 void
