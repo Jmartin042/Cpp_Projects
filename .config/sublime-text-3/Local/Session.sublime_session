@@ -3,7 +3,7 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 33,
+	"last_window_id": 35,
 	"log_indexing": false,
 	"settings":
 	{
@@ -274,7 +274,7 @@
 			{
 			}
 		},
-		"new_window_width": 958.0
+		"new_window_width": 1344.0
 	},
 	"windows":
 	[
@@ -363,7 +363,7 @@
 					"file": "/home/ee259d15/pro_4/p4.h",
 					"settings":
 					{
-						"buffer_size": 6278,
+						"buffer_size": 6218,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -409,6 +409,7 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_4/skel_p4.h",
 				"/home/ee259d15/pro_3/sample_p3.h",
 				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
 				"/home/ee259d15/pro_4/p4.h",
@@ -556,15 +557,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 6278,
+								"buffer_size": 6218,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2156,
-										2156
+										2105,
+										2105
 									]
 								],
 								"settings":
@@ -573,7 +574,7 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 810.0,
+								"translation.y": 648.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -647,7 +648,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,3841,862,5185,1870,5760,2160",
+			"position": "0,0,0,0,0,3841,862,5064,1870,5760,2160",
 			"project": "",
 			"replace":
 			{
