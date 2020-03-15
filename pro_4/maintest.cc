@@ -8,11 +8,14 @@ int main ()
 	//g2.OVERLOADED_LIST(1);
 	//g3.OVERLOADED_LIST(1);
 
-	g3 = g1 + g2;
+	//g3 = g1 + g2;
+	g1.OVERLOADED_LIST(1);
+	g1 = g1+g1+g1;
 
 	//g1.OVERLOADED_LIST(1);
 	//g2.OVERLOADED_LIST(1);
-	g3.OVERLOADED_LIST(1);
+    //g3 -= 3333;
+	g1.OVERLOADED_LIST(1);
 
         return 0;
 	

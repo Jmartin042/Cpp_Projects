@@ -68,20 +68,22 @@ OVERLOADED_GRADES::OVERLOADED_LIST(int x)
 
 	o_f<<"+++++++++ START OVERLOADED_LIST"<<endl;
 	
-	if(x==0)
+	if(x==0 || x==1 || x==2 )
 	{
 		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
-		LIST(0);
-	}
-	else if(x==1)
-	{	
-		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
-		LIST(5);
-	}
-	else if(x==2)
-	{
-		o_f<<"+++++++++ ELEMENTS OF "<<objName<<":"<<endl;
-		LIST(-5);
+
+		if(x==0)
+		{
+			LIST(0);
+		}
+		else if(x==1)
+		{	
+			LIST(5);
+		}
+		else if(x==2)
+		{
+			LIST(-5);
+		}
 	}
 	else
 	{
