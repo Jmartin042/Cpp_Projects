@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 35,
+	"last_window_id": 36,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1008.0,
+		"new_window_height": 1017.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -111,6 +111,7 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_4/skel_p4.h",
 				"/home/ee259d15/pro_3/sample_p3.h",
 				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
 				"/home/ee259d15/pro_4/p4.h",
@@ -274,7 +275,7 @@
 			{
 			}
 		},
-		"new_window_width": 1344.0
+		"new_window_width": 1920.0
 	},
 	"windows":
 	[
@@ -352,10 +353,10 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_4/main4_5.cc",
+					"file": "/home/ee259d15/pro_4/output.txt",
 					"settings":
 					{
-						"buffer_size": 317,
+						"buffer_size": 3003,
 						"line_ending": "Unix"
 					}
 				},
@@ -364,15 +365,22 @@
 					"settings":
 					{
 						"buffer_size": 6218,
-						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/ee259d15/pro_3/p3.h",
+					"file": "/home/ee259d15/pro_4/specPro4.txt",
 					"settings":
 					{
-						"buffer_size": 5078,
+						"buffer_size": 8941,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_4/out_4_expected_5.txt",
+					"settings":
+					{
+						"buffer_size": 3003,
 						"line_ending": "Unix"
 					}
 				}
@@ -525,24 +533,24 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_4/main4_5.cc",
+							"file": "/home/ee259d15/pro_4/output.txt",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 317,
+								"buffer_size": 3003,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										317,
-										317
+										0,
+										0
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax"
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -564,17 +572,16 @@
 								"selection":
 								[
 									[
-										2105,
-										2105
+										4547,
+										4547
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 648.0,
+								"translation.y": 3186.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -582,28 +589,55 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/home/ee259d15/pro_3/p3.h",
+							"file": "/home/ee259d15/pro_4/specPro4.txt",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5078,
+								"buffer_size": 8941,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5014,
-										5014
+										8941,
+										8941
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 3294.0,
+								"translation.y": 3859.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/ee259d15/pro_4/out_4_expected_5.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3003,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
@@ -648,7 +682,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,3841,862,5064,1870,5760,2160",
+			"position": "0,0,0,0,0,-17,354,2013,2056,5760,2160",
 			"project": "",
 			"replace":
 			{
@@ -695,7 +729,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 30,
+			"window_id": 36,
 			"workspace_name": ""
 		}
 	],
