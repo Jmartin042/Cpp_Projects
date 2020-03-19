@@ -1,0 +1,417 @@
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_                                                                      \_
+\_   THE CITY COLLEGE OF NEW YORK, ELECTRICAL ENGINEERING DEPARTMENT    \_
+\_                         EE259 PROGRAMMING FOR EE                     \_
+\_                                                                      \_
+\_                              PROJECT 5                               \_
+\_                                                                      \_
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+PROJECT 5 DESCRIPTION:
+
+Write a C++ class called MATRIX, which inherits from PROGRAM_BANK class, 
+with the following methods:
+
+class MATRIX: public PROGRAM_BANK{
+
+	// there are two friend functions:
+	friend MATRIX operator / (int, MATRIX) 
+			// FRIEND FUNCTION; example: 5 / X;
+			// Compute inverse of X using INHERITANCE;
+			// Multiply each element of inverted matrix by 5; 
+			// store the results into a temp MATRIX;
+			// return the temp MATRIX;
+	
+	friend MATRIX operator * (int, MATRIX); 
+			// FRIEND FUNCTION; example: 5 * X;
+			// each element of the matrix X is 
+			// multiplied by 5;
+			// store the results into a temp MATRIX;
+			// return the temp MATRIX;
+
+	public:	// public methods for this class
+	
+	  MATRIX (int, int); 	// constructor 1;
+			// example: MATRIX X(d1,d2);
+			// creates a matrix object with
+			// private variables dim1 = d1 and dim2 = d2
+			// and initializes each element to 0;
+  
+	  MATRIX(int, int, char *); // constructor 2;
+			// example: MATRIX X(d1,d2,"in_name");
+			// read the elements of the matrix
+			// from a given file in_name; d1 and d2 are 
+			// the two dimensions of the matrix;
+				
+	  void PRINT(char *);	// example: X.PRINT("W");
+			// print the elements of the matrix X
+			// into output.txt file;
+			// returns no values;
+
+	  int  operator < (int); //example: if( X < b)
+			// return 1 if the minimum element of the matrix X
+			// is less than b;
+			// return 0 otherwise;
+		
+	  void operator = (MATRIX); // example X = Y;
+			// Copy private elements of Y to X;
+			// returns no values;		
+		
+	  void operator += (MATRIX);  // example: X += Y;
+                        // matrix addition;
+                        // store the results in X;
+			// values of Y remain unchanged;
+			// returns no values;
+		
+	  void operator *= (MATRIX); // example: X *= Y;
+			// matrix multiplication;
+			// store the results in X;
+			// values of Y remain unchanged;
+			// returns no values;
+
+	  MATRIX operator + (MATRIX); // example: X + Y;
+			// Create a temp MATRIX object; 
+			// add each element of Y to each element of X;
+			// return this temp MATRIX object;
+			// values of X and Y remain unchanged;
+
+	  MATRIX operator * (MATRIX); // example: X * Y;
+			// matrix multiplication;
+			// store the results into a temp matrix
+			// and return this temp matrix;
+			// values of Y remain unchanged;
+
+	  MATRIX operator / (MATRIX); // example: X / Y;
+			// get inverse of Y and multiply it with X;
+			// put the results into a temp MATRIX
+			// and return temp MATRIX;
+			// X and Y remain unchanged;
+			// USE INHERITANCE FOR MATRIX INVERSION;
+	
+	protected:
+  	  int dim1, dim2; // dimensions of the matrix;
+			// if dim2 is 1, a vector (no need for special
+			// handling of vectors; everything should work
+			// for both matrices and vectors)
+  	  double A[20][20]; // 2 dimensional array for the matrix elements;
+	  char in_file[30]; // holds the input file name; 29 chars max;
+ };
+
+MAKE SURE THAT EVERY LINE YOUR WRITE INTO output.txt ENDS WITH endl.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The first constructor for MATRIX is defined as follows:
+
+	MATRIX X(d1, d2);	
+
+where d1 and d2 should be stored in dim1 and dim2, respectively. 
+Initialize all elements of A to 0.  
+
+For inheritance, you need to include the following in the constructor:
+
+	MATRIX::MATRIX(int d1, int d2)
+		: PROGRAM_BANK(d1)
+	{
+		your constructor code goes here
+	}
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The second constructor for MATRIX is defined as follows:
+
+	MATRIX X(d1, d2, "in_name");	
+
+where  dim1 and dim2 (both integers, 1 <= dim1,dim2 <= 20) are the dimensions 
+of the matrix, and in_name is (char string) the name of the input file.
+
+The format of the matrix in the input file is:
+
+	x_0_0		x_0_1		...	x_0_dim2-1
+	x_1_0		x_1_1		...	x_1_dim2-1
+	...
+	x_dim1-1_0 	x_dim1-1_1 	... 	x_dim1-1_dim2-1
+
+where x_i_j are double numbers.
+
+For inheritance, you need to include the following in the constructor:
+
+	MATRIX::MATRIX(int d1, int d2, char * file_name)
+		: PROGRAM_BANK(d1, file_name)
+	{
+		your constructor code goes here
+	}
+
+After reading the values into private vars, the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> CREATED A dim1 X dim2 MATRIX FROM file_name
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If there are errors in the input data, the output to output.txt is:
+ 		
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> INPUT ERROR
+	+++ P5_OUTPUT >>> UNABLE TO CREATE MATRIX
+	+++ P5_OUTPUT >>> EXITING PROGRAM
+      	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+After this message, the program terminates (i.e., it returns).
+ 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+For program statements where the first argument is not an object, the 
+overloaded operator / is defined as a friend function of the MATRIX class. 
+An example is :
+
+	c / X
+
+where c is an integer and X is a MATRIX object. First compute
+the inverse of X using inherited class PROGRAM_BANK. Then multiply each
+element of inverted matrix by c and store it in a temp MATRIX. Return temp. 
+
+In your code of friend function operator /, you can run INVERT_MATRIX
+method of PROGRAM_BANK as follows:
+
+	MATRIX operator / (int x, MATRIX a_matrix)
+	{
+		...
+		a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt");
+		...
+	}
+
+INVERT_MATRIX writes the inverted matrix data elements into a file
+called OUT_5_TEMP.txt file with the following format:
+
+        inv_0_0 	inv_0_1 	... 	inv_0_dim1-1
+        ...
+        inv_dim1-1_0 	inv_dim1_1 	... 	inv_dim1-1_dim1-1
+
+You need to open OUT_5_TEMP.txt and read the elements of the inverted 
+matrix into a temporary MATRIX object. The output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> THE RESULT OF c / X OPERATION IS:
+	b_0_0   	b_0_1    ... b_0_d1-1
+	...
+	b_d1-1_0   	b_d1-1_1 ... b_d1-1_d1-1
+      	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+where b_i_j is the element of the inverted matrix after it is multiplied
+by integer c. 
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+For program statements where the first argument is not an object, the 
+overloaded operator * is defined as a friend function of the MATRIX class. 
+An example is :
+
+	c * X
+
+where c is an integer and X is a MATRIX object. Each element of X 
+is multiplied by c and store the results in a temp MATRIX. Return temp. 
+The expected output to output.txt is:
+	
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> THE RESULT OF c * X OPERATION IS:
+	b_0_0   	b_0_1    ... b_0_d2-1
+	...
+	b_d1-1_0   	b_d1-1_1 ... b_d1-1_d2-1
+      	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+where b_i_j is the element of the matrix after integer c multiplies 
+each element of X.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of PRINT method is as follows:
+
+	X.PRINT(NAME);
+
+where NAME is a character string. Print the private data elements of X 
+into output.txt with the following format:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> CONTENTS OF MATRIX NAME IS:
+	x_0_0 		x_0_1		...	x_0_dim2-1
+	x_1_0 		x_1_1		...	x_1_dim2-1
+	...
+	x_dim1-1_0 	x_dim1-1_1 	... 	x_dim1-1_dim2-1
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+An example use of overloaded operator < method is as follows:
+
+	if (X < b)
+
+where X is a MATRIX object and b is an integer. This method checks 
+if the minimum element of X is less than b.  If so, it returns 1 
+with the following output to output.txt:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING TRUE
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+Otherwise, it returns 0 with the following output to output.txt:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING FALSE
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ 
+
+An example of overloaded operator = between two MATRIX objects is:
+
+  	X = Y; 
+
+which checks if the dimensions of X and Y MATRIX objects are equal.
+If so, it copies elements of Y into elements of X. Y remains unchanged.
+The output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR = COMPLETED
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If the dimensions do not match, the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT>>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+ An example of overloaded operator += between two MATRIX objects is:
+ 
+        X += Y;
+ 
+where X and Y are MATRIX objects.  If the dimensions are compatible,
+this operator adds X and Y element by element, stores the results into X. 
+Values in Y remain unchanged. The output to output.txt is:
+	
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR += COMPLETED
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If the dimensions do not match, the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+ An example of overloaded operator *= between two MATRIX objects is:
+ 
+        X *= Y;
+ 
+where X and Y are MATRIX objects. If the dimensions are compatible,
+this operator performs matrix multiplication of objects X and Y, 
+and stores the results into object X.  Values in Y remain unchanged. 
+The output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR *= COMPLETED
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If the dimensions do not match the output to output.txt is:
+	
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+ An example of overloaded operator + is:
+ 
+        X + Y;
+ 
+where X and Y are MATRIX objects.  If the dimensions match, this 
+operator creates a temporary MATRIX object, adds Y[i][j] to X[i][j] and 
+stores the results in the temporary object. It then returns this object. 
+Values in Y remain unchanged.  The output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR + COMPLETED
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If the dimensions do not match the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+An example of overloaded operator * between two MATRIX objects is:
+ 
+        X * Y;
+ 
+where X and Y are MATRIX objects. If the dimensions are compatible,
+this operator performs matrix multiplication of X and Y, stores the 
+results into a temp MATRIX object and returns the temp object. 
+The output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR * COMPLETED
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+If the dimensions do not match the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+An example of the overloaded operator / between two MATRIX objects is:
+
+	X / Y
+
+The inverse of Y is implemented by using inherited class PROGRAM_BANK.
+In your code for this overloaded operator, you can run INVERT_MATRIX
+method of PROGRAM_BANK as follows:
+
+        MATRIX MATRIX operator / (MATRIX a_matrix)
+	{
+		...
+		a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt");
+		...
+	}
+
+INVERT_MATRIX writes the inverted matrix into OUT_5_TEMP.txt file with the
+following format:
+
+        inv_0_0 	inv_0_1 	... 	inv_0_dim1-1
+        ...
+        inv_dim1-1_0 	inv_dim1_1 	... 	inv_dim1-1_dim1-1
+
+You need to create a MATRIX object with dimensions of inverted matrix
+and OUT_5_TEMP.txt file. 
+
+The expected output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> OVERLOADED OPERATOR / COMPLETED
+	+++ P5_OUTPUT >>> THE RESULT OF X/Y OPERATION IS:
+	b_0_0   	b_0_1    ... b_0_d1-1
+	...
+	b_d1-1_0   	b_d1-1_1 ... b_d1-1_d1-1
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+where b_i_j is the element of the inverted matrix after the multiplication 
+is complete.
+
+If the dimensions do not match the output to output.txt is:
+
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> ERROR
+	+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

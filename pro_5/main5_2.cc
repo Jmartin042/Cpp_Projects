@@ -1,5 +1,5 @@
 //Example program: main5_2.cc
-#include "p5test.h"
+#include "p5.h"
 int main ()
 {
 	MATRIX X(2,2,"in_5_21.txt"), Y(2,2, "in_5_22.txt"), Z(2,2);
