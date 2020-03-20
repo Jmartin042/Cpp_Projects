@@ -173,7 +173,43 @@ MATRIX::MATRIX(int d1, int d2, char * file_name)
 // friend function
 MATRIX operator / (int c, MATRIX a_matrix_obj)
 { // your code goes below:
-	MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2);
+	MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2); //temp matrix takes on dimensions of a_matrix_obj
+
+	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
+
+	int i,j,k;
+	a_matrix_obj.INVERT_MATRIX("OUT_5_TEMP.txt"); //inverts a_matrix, places into txt file
+	ifstream input_file("OUT_5_TEMP.txt",ios::in); //declares the txt file as source of input when used with input_file >>
+
+	MATRIX INV_MATRIX(20, 20); //create new matrix with new name "INV_MATRIX"
+	
+	INV_MATRIX.dim1=a_matrix_obj.dim1; //match the dimensions
+	INV_MATRIX.dim2=a_matrix_obj.dim2;
+
+	for(i=0;i<INV_MATRIX.dim1;i++)//fills INV_MATRIX with elements from the txt file
+	{
+		for(j=0;j<INV_MATRIX.dim2;j++)
+		{
+			input_file >> INV_MATRIX.A[i][j]; 
+		}
+	}
+	for (i=0;i<INV_MATRIX.dim1;i++) // multiplies the inv_matrix by c
+    {  		
+		for(j=0;j<INV_MATRIX.dim2;j++)
+     	{
+     		temp_matrix_obj.A[i][j]=c * INV_MATRIX.A[i][j];
+     	}	
+	}
+	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"/ "<<"X OPERATION IS:"<<endl;
+	for(i = 0; i < temp_matrix_obj.dim1; i++)
+    {
+    	for(j = 0; j < temp_matrix_obj.dim2; j++)
+    	{
+           o_f <<setprecision (2) << setiosflags(ios::fixed | ios::showpoint) <<temp_matrix_obj.A[i][j] << " ";                       
+        }
+        o_f << endl;
+    }
+    o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
      
 	return temp_matrix_obj;
 }
@@ -182,36 +218,27 @@ MATRIX operator / (int c, MATRIX a_matrix_obj)
 MATRIX operator * (int c, MATRIX a_matrix_obj)
 { // your code goes below:
      MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2);
+	 int i,j;
+	  o_f <<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
+	  
+	for(i=0;i<a_matrix_obj.dim1;i++) //multiplies a_matrix_obj by c, element by element  
+	{
+	  	for(j=0;j<a_matrix_obj.dim2;j++)
+	  	{
+	  		temp_matrix_obj.A[i][j]=c*a_matrix_obj.A[i][j];
+	  	}
+	}
+	o_f <<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"* X OPERATION IS:" << endl;
+	for(i=0;i<temp_matrix_obj.dim1;i++)
+	{
+		for(j=0;j<temp_matrix_obj.dim2;j++)
+	  	{
+	  		o_f <<setprecision (2) << setiosflags (ios::fixed | ios::showpoint)<<temp_matrix_obj.A[i][j] <<" ";	
+	  	}
+	  	o_f<<endl;
+	}
+	o_f <<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
 	 
-	 int i,j,k;
-     temp_matrix_obj.dim1=dim1;
-     temp_matrix_obj.dim2=a_matrix_obj.dim2;
-/*
-     if(dim2==a_matrix_obj.dim1)
-     {
-     	
-     	for (i=0;i<temp_matrix_obj.dim1;i++)
-     	{
-     		
-     		for(j=0;j<temp_matrix_obj.dim2;j++)
-     		{
-     			for(k=0;k<temp_matrix_obj.dim2;k++)
-     			{
-     				temp_matrix_obj.A[i][j]=temp_matrix_obj.A[i][j]+A[i][k]*a_matrix_obj.A[k][j];
-     			}
-     		}
-     	
-     	}
-     
-     }
-     else
-     {
-     	o_f <<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
-        o_f <<"+++ P5_OUTPUT >>> ERROR" << endl;
-        o_f <<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
-        o_f <<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
-     }
-     */
      return temp_matrix_obj;
 }
 
@@ -238,7 +265,7 @@ MATRIX::operator < (int b)
 { // your code goes below:
 
 	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
-	int i,j,FOUND=0;
+	int i,j,FOUND=0,k;
 	for (i=0; i<dim1 && FOUND==0; i++)
 	{
 		for ( j=0; j<dim2 && FOUND==0; j++)
@@ -253,16 +280,16 @@ MATRIX::operator < (int b)
 	{
 		o_f << "+++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING TRUE" << endl;
 		o_f << "+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
-		return 1;
+		k= 1;
 	}
 	else if (FOUND==0)
 	{
 		o_f << "+++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING FALSE" << endl;
 		o_f << "+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
-		return 0;
+		k= 0;
 	}
 
-        return 0; // make sure to modify this in your code
+        return k; // make sure to modify this in your code
 }
 
 void
@@ -294,12 +321,68 @@ MATRIX::operator = (MATRIX  a_matrix)
 void
 MATRIX::operator += (MATRIX a_matrix)
 { // your code goes below:
+	int i,j;
+	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
+	if(dim1==a_matrix.dim1 && dim2==a_matrix.dim2)
+	{
+		for(i=0;i<dim1;i++)
+		{
+			for(j=0;j<dim2;j++)
+			{
+				A[i][j]=A[i][j]+a_matrix.A[i][j];
+			}
+		}
+		o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR += COMPLETED"<<endl;
+	}
+	else
+	{
+		o_f<<"+++ P5_OUTPUT >>> ERROR"<<endl;
+		o_f<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;
+	}
 
 }
 
 void
 MATRIX::operator *= (MATRIX a_matrix)
 { // your code goes below:
+	
+	int i,j,k;
+	if(dim2==a_matrix.dim1)
+     {
+     	MATRIX temp_matrix(dim1,a_matrix.dim2); //new temp matrix takes on dimension dim1 from base array, and dim2 from a_matrix
+     	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
+     	
+     	for (i=0;i<dim1;i++) //creates new array from the matrix multiplication of base and secondary array 
+     	{
+     		for(j=0;j<a_matrix.dim2;j++)
+     		{
+     			for(k=0;k<dim2;k++)
+     			{
+     				temp_matrix.A[i][j]=temp_matrix.A[i][j]+A[i][k]*a_matrix.A[k][j];
+     			}
+     		}
+     	}
+     	dim1=temp_matrix.dim1; //overrides the base array with values from temp_matrix
+     	dim2=temp_matrix.dim2;
+     	for(i=0;i<dim1;i++)
+     	{
+     		for(j=0;j<dim2;j++)
+     		{
+     			A[i][j]=temp_matrix.A[i][j];
+     		}
+     	}
+
+     	o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR *= COMPLETED"<<endl;
+     	o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
+     
+     }
+     else
+     {
+     	o_f <<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
+        o_f <<"+++ P5_OUTPUT >>> ERROR" << endl;
+        o_f <<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
+        o_f <<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
+     }
 
 }
 
@@ -342,6 +425,37 @@ MATRIX::operator * (MATRIX a_matrix)
         MATRIX temp_matrix(dim1, dim2);
 	// your code goes below:
 
+	 int i,j,k;
+     temp_matrix.dim1=dim1;
+     temp_matrix.dim2=a_matrix.dim2;
+
+     if(dim2==a_matrix.dim1)
+     {
+     	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
+     	for (i=0;i<temp_matrix.dim1;i++)
+     	{
+     		
+     		for(j=0;j<temp_matrix.dim2;j++)
+     		{
+     			for(k=0;k<temp_matrix.dim2;k++)
+     			{
+     				temp_matrix.A[i][j]=temp_matrix.A[i][j]+A[i][k]*a_matrix.A[k][j];
+     			}
+     		}
+     	
+     	}
+     	o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR * COMPLETED"<<endl;
+     	o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
+     
+     }
+     else
+     {
+     	o_f <<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
+        o_f <<"+++ P5_OUTPUT >>> ERROR" << endl;
+        o_f <<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
+        o_f <<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
+     }
+     
 
         return temp_matrix;
 }
@@ -349,8 +463,59 @@ MATRIX::operator * (MATRIX a_matrix)
 MATRIX
 MATRIX::operator / (MATRIX a_matrix)
 {
-        MATRIX temp_matrix(dim1, dim2);
+    MATRIX temp_matrix(dim1, a_matrix.dim2); //uses constructor 1, temp_matrix takes on dim1 from base and dim2 from a_matrix
 	// your code goes below:
+
+	int i,j,k;
+	a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt"); //inverts a_matrix, places into txt file
+	//ifstream input_file("OUT_5_TEMP.txt",ios::in); //declares the txt file as source for inputing when used with input_file >> (comment out line! test)
+
+	MATRIX INV_MATRIX(a_matrix.dim1, a_matrix.dim2,"OUT_5_TEMP.txt"); //uses constructor 2, create new matrix with name "INV_MATRIX" which is populated from OUT_5_TEMP.txt
+	
+	//INV_MATRIX.dim1=a_matrix.dim1; //match the dimensions
+	//INV_MATRIX.dim2=a_matrix.dim2;
+
+	/*for(i=0;i<INV_MATRIX.dim1;i++) //fills in INV matrix from the txt file
+	{
+		for(j=0;j<INV_MATRIX.dim2;j++)
+		{
+			input_file >> INV_MATRIX.A[i][j]; 
+		}
+	}*/
+	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
+	if(dim2==INV_MATRIX.dim1)
+	{
+     	for (i=0;i<dim1;i++)
+     	{
+     		for(j=0;j<a_matrix.dim2;j++)
+     		{
+     			for(k=0;k<INV_MATRIX.dim2;k++)
+     			{
+     				temp_matrix.A[i][j]=temp_matrix.A[i][j]+A[i][k]*INV_MATRIX.A[k][j];
+     			}
+     		}
+     	
+     	}
+     	o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR / COMPLETED"<<endl;
+     	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF X/Y OPERATION IS:"<<endl;
+
+     	for ( i = 0; i < temp_matrix.dim1; i++)
+         {
+             for ( j= 0; j < temp_matrix.dim2; j++)
+             {
+                 o_f <<setprecision(2) << setiosflags(ios::fixed | ios::showpoint) << temp_matrix.A[i][j] << " ";
+             }
+             o_f << endl;
+         }
+     	
+	}
+	else
+	{
+		//o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
+		o_f<<"+++ P5_OUTPUT >>> ERROR"<<endl;
+		o_f<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;
+	}
+	o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
 
         return temp_matrix;
 }
