@@ -173,7 +173,7 @@ MATRIX::MATRIX(int d1, int d2, char * file_name)
 // friend function
 MATRIX operator / (int c, MATRIX a_matrix_obj)
 { // your code goes below:
-	MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2); //temp matrix takes on dimensions of a_matrix_obj
+	MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2); //constructor1, temp matrix takes on dimensions of a_matrix_obj
 
 	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
 
@@ -217,7 +217,7 @@ MATRIX operator / (int c, MATRIX a_matrix_obj)
 // friend function
 MATRIX operator * (int c, MATRIX a_matrix_obj)
 { // your code goes below:
-     MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2);
+     MATRIX temp_matrix_obj(a_matrix_obj.dim1, a_matrix_obj.dim2);// constructor 1,  new temp_matrix_obj takes on dimensions from a_matrix_obj
 	 int i,j;
 	  o_f <<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
 	  
@@ -268,7 +268,7 @@ MATRIX::operator < (int b)
 	int i,j,FOUND=0,k;
 	for (i=0; i<dim1 && FOUND==0; i++)
 	{
-		for ( j=0; j<dim2 && FOUND==0; j++)
+		for ( j=0; j<dim2 && FOUND==0; j++)// checks if any element in base matrix is <b
 		{
 			if (A[i][j]<b)
 			{
@@ -297,12 +297,12 @@ MATRIX::operator = (MATRIX  a_matrix)
 { // your code goes below:
 	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
 	int i,j;
-	if ( dim1==a_matrix.dim1 && dim2==a_matrix.dim2 )
+	if ( dim1==a_matrix.dim1 && dim2==a_matrix.dim2 )// checks if base matrix and a_matrix are same dimensions
 	{
 		o_f << "+++ P5_OUTPUT >>> OVERLOADED OPERATOR = COMPLETED" << endl;
 		for ( i=0; i<dim1; i++)
 		{
-			for ( j=0; j<dim2; j++)
+			for ( j=0; j<dim2; j++)// copies a_matrix into base matrix
 			{
 				A[i][j]=a_matrix.A[i][j];
 			}
@@ -349,10 +349,10 @@ MATRIX::operator *= (MATRIX a_matrix)
 	int i,j,k;
 	if(dim2==a_matrix.dim1)
      {
-     	MATRIX temp_matrix(dim1,a_matrix.dim2); //new temp matrix takes on dimension dim1 from base array, and dim2 from a_matrix
+     	MATRIX temp_matrix(dim1,a_matrix.dim2); //constructor 1,new temp matrix takes on dimension dim1 from base array, and dim2 from a_matrix
      	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
      	
-     	for (i=0;i<dim1;i++) //creates new array from the matrix multiplication of base and secondary array 
+     	for (i=0;i<dim1;i++) //MATRIX MULTIPLICATION of base matrix and a_matrix into temp_matrix
      	{
      		for(j=0;j<a_matrix.dim2;j++)
      		{
@@ -422,22 +422,22 @@ MATRIX::operator + (MATRIX a_matrix)
 MATRIX
 MATRIX::operator * (MATRIX a_matrix)
 {
-        MATRIX temp_matrix(dim1, dim2);
+        MATRIX temp_matrix(dim1, dim2);//constuctor 1, new temp_matrix takes on dimensions from base matrix
 	// your code goes below:
 
 	 int i,j,k;
-     temp_matrix.dim1=dim1;
-     temp_matrix.dim2=a_matrix.dim2;
 
-     if(dim2==a_matrix.dim1)
+     if(dim2==a_matrix.dim1)//checks for correct dimensions to perform matrix multiplication
      {
+     	temp_matrix.dim1=dim1;// if correct temp_matrix has these corresponding dimensions for further use
+     	temp_matrix.dim2=a_matrix.dim2;
+
      	o_f << "+++ P5 START +++++++++++++++++++++++++++++++++++++++++" << endl;
-     	for (i=0;i<temp_matrix.dim1;i++)
+     	for (i=0;i<temp_matrix.dim1;i++)//MATRIX MULTIPLICATION if base matrix and a_matrix into temp_matrix
      	{
-     		
      		for(j=0;j<temp_matrix.dim2;j++)
      		{
-     			for(k=0;k<temp_matrix.dim2;k++)
+     			for(k=0;k<dim2;k++)
      			{
      				temp_matrix.A[i][j]=temp_matrix.A[i][j]+A[i][k]*a_matrix.A[k][j];
      			}
@@ -457,7 +457,7 @@ MATRIX::operator * (MATRIX a_matrix)
      }
      
 
-        return temp_matrix;
+        return temp_matrix; //no output peformed, just stores into temp
 }
 
 MATRIX
@@ -466,26 +466,15 @@ MATRIX::operator / (MATRIX a_matrix)
     MATRIX temp_matrix(dim1, a_matrix.dim2); //uses constructor 1, temp_matrix takes on dim1 from base and dim2 from a_matrix
 	// your code goes below:
 
-	int i,j,k;
-	a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt"); //inverts a_matrix, places into txt file
-	//ifstream input_file("OUT_5_TEMP.txt",ios::in); //declares the txt file as source for inputing when used with input_file >> (comment out line! test)
+	a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt"); //inverts a_matrix, places into txt file OUT_5_TEMP.txt
 
 	MATRIX INV_MATRIX(a_matrix.dim1, a_matrix.dim2,"OUT_5_TEMP.txt"); //uses constructor 2, create new matrix with name "INV_MATRIX" which is populated from OUT_5_TEMP.txt
 	
-	//INV_MATRIX.dim1=a_matrix.dim1; //match the dimensions
-	//INV_MATRIX.dim2=a_matrix.dim2;
-
-	/*for(i=0;i<INV_MATRIX.dim1;i++) //fills in INV matrix from the txt file
-	{
-		for(j=0;j<INV_MATRIX.dim2;j++)
-		{
-			input_file >> INV_MATRIX.A[i][j]; 
-		}
-	}*/
+	int i,j,k;
 	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
 	if(dim2==INV_MATRIX.dim1)
 	{
-     	for (i=0;i<dim1;i++)
+     	for (i=0;i<dim1;i++)//MATRIX MULTIPLICATION OF BASE MATRIX AND INV OF a_matrix into temp_matrix
      	{
      		for(j=0;j<a_matrix.dim2;j++)
      		{
@@ -511,7 +500,6 @@ MATRIX::operator / (MATRIX a_matrix)
 	}
 	else
 	{
-		//o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
 		o_f<<"+++ P5_OUTPUT >>> ERROR"<<endl;
 		o_f<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;
 	}
