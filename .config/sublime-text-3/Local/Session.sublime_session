@@ -376,7 +376,7 @@
 					"file": "/home/ee259d15/pro_5/p5.h",
 					"settings":
 					{
-						"buffer_size": 14945,
+						"buffer_size": 14978,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -553,15 +553,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 14945,
+								"buffer_size": 14978,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										5338,
-										5338
+										12130,
+										12130
 									]
 								],
 								"settings":
@@ -569,7 +569,7 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 2646.0,
+								"translation.y": 7074.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -614,7 +614,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,755,358,1813,1805,5760,2160",
+			"position": "0,0,0,0,0,755,358,3012,1962,5760,2160",
 			"project": "",
 			"replace":
 			{

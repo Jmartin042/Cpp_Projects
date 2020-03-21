@@ -460,7 +460,7 @@ MATRIX::operator / (MATRIX a_matrix)
 
 	a_matrix.INVERT_MATRIX("OUT_5_TEMP.txt"); //inverts a_matrix, places into txt file OUT_5_TEMP.txt
 
-	MATRIX INV_MATRIX(a_matrix.dim1, a_matrix.dim2,"OUT_5_TEMP.txt"); //uses constructor 2, create new matrix with name "INV_MATRIX" which is populated from OUT_5_TEMP.txt
+	MATRIX INV_MATRIX(a_matrix.dim1, a_matrix.dim2,"OUT_5_TEMP.txt"); //uses constructor 2, create new matrix with name "INV_MATRIX" which is populated from OUT_5_TEMP.txt and takes on a_matrix dimensions
 	
 	int i,j,k;
 	o_f<<"+++ P5 START +++++++++++++++++++++++++++++++++++++++++"<<endl;
