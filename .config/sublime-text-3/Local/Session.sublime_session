@@ -3,37 +3,17 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 39,
+	"last_window_id": 40,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1796.0,
+		"new_window_height": 2088.0,
 		"new_window_settings":
 		{
 			"auto_complete":
 			{
 				"selected_items":
 				[
-					[
-						"temp_matri",
-						"temp_matrix_obj"
-					],
-					[
-						"temp_",
-						"temp_matrix_obj"
-					],
-					[
-						"a_ma",
-						"a_matrix_obj"
-					],
-					[
-						"a_",
-						"a_matrix_obj"
-					],
-					[
-						"a",
-						"a_matrix_obj"
-					],
 					[
 						"file",
 						"file_name"
@@ -135,14 +115,12 @@
 			},
 			"file_history":
 			[
-				"/home/ee259d15/pro_5/out_5_expected_1.txt",
-				"/home/ee259d15/pro_5/skel_p5.h",
-				"/home/ee259d15/pro_5/main5_1.cc",
-				"/home/ee259d15/pro_1/p1.h",
-				"/home/ee259d15/pro_3/p3.h",
-				"/home/ee259d15/pro_2/p2.h",
+				"/home/ee259d15/pro_5/in_test23.txt",
+				"/home/ee259d15/pro_5/in_test1.txt",
+				"/home/ee259d15/pro_5/in_test2.txt",
 				"/home/ee259d15/pro_5/p5.h",
 				"/home/ee259d15/pro_5/main5_4.cc",
+				"/home/ee259d15/pro_5/skel_p5.h",
 				"/home/ee259d15/pro_5/inversion.h",
 				"/home/ee259d15/pro_5/in_5_42.txt",
 				"/home/ee259d15/pro_5/in_5_12.txt",
@@ -155,6 +133,9 @@
 				"/home/ee259d15/pro_3/sample_p3.h",
 				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
 				"/home/ee259d15/pro_3/out_3_expected_5.txt",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_1/p1.h",
+				"/home/ee259d15/pro_2/p2.h",
 				"/home/ee259d15/pro_4/main4_2.cc",
 				"/home/ee259d15/pro_4/main4_1.cc",
 				"/home/ee259d15/p4.h",
@@ -310,7 +291,7 @@
 			{
 			}
 		},
-		"new_window_width": 1794.0
+		"new_window_width": 1918.0
 	},
 	"windows":
 	[
@@ -392,27 +373,11 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_5/in_5_11.txt",
-					"settings":
-					{
-						"buffer_size": 9,
-						"line_ending": "Unix"
-					}
-				},
-				{
 					"file": "/home/ee259d15/pro_5/p5.h",
 					"settings":
 					{
-						"buffer_size": 14868,
+						"buffer_size": 14945,
 						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_5/inversion.h",
-					"settings":
-					{
-						"buffer_size": 2102,
 						"line_ending": "Unix"
 					}
 				}
@@ -449,16 +414,26 @@
 			},
 			"file_history":
 			[
-				"/home/ee259d15/pro_5/p5.h",
-				"/home/ee259d15/pro_5/main5_4.cc",
-				"/home/ee259d15/pro_5/skel_p5.h",
+				"/home/ee259d15/pro_5/out_test_expected.txt",
+				"/home/ee259d15/pro_5/output.txt",
 				"/home/ee259d15/pro_5/inversion.h",
+				"/home/ee259d15/pro_5/maintest.cc",
+				"/home/ee259d15/pro_5/out_5_expected_4.txt",
+				"/home/ee259d15/pro_5/maintest2.cc",
+				"/home/ee259d15/pro_5/in_test33.txt",
+				"/home/ee259d15/pro_5/in_test32.txt",
+				"/home/ee259d15/pro_5/in_test23.txt",
+				"/home/ee259d15/pro_5/main5_4.cc",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_5/in_test1.txt",
+				"/home/ee259d15/pro_5/in_test2.txt",
+				"/home/ee259d15/pro_5/p5.h",
+				"/home/ee259d15/pro_5/skel_p5.h",
 				"/home/ee259d15/pro_5/in_5_42.txt",
 				"/home/ee259d15/pro_5/in_5_12.txt",
 				"/home/ee259d15/pro_5/in_5_11.txt",
 				"/home/ee259d15/pro_4/out_4_expected_5.txt",
 				"/home/ee259d15/pro_4/specPro4.txt",
-				"/home/ee259d15/pro_4/p4.h",
 				"/home/ee259d15/pro_4/output.txt",
 				"/home/ee259d15/pro_4/skel_p4.h",
 				"/home/ee259d15/pro_3/sample_p3.h",
@@ -569,52 +544,24 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_5/in_5_11.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 9,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
 							"file": "/home/ee259d15/pro_5/p5.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 14868,
+								"buffer_size": 14945,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										8607,
-										8607
+										5338,
+										5338
 									]
 								],
 								"settings":
@@ -622,40 +569,10 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 4249.0,
+								"translation.y": 2646.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/ee259d15/pro_5/inversion.h",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 2102,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2102,
-										2102
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"tab_size": 2,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -697,7 +614,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,1921,31,3839,2119,5760,2160",
+			"position": "0,0,0,0,0,755,358,1813,1805,5760,2160",
 			"project": "",
 			"replace":
 			{
@@ -744,7 +661,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 37,
+			"window_id": 40,
 			"workspace_name": ""
 		}
 	],
