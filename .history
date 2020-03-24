@@ -1,40 +1,40 @@
-#+1584730775
-ls
-#+1584730802
-subl p5.h
-#+1584731029
-diff -w ouput.txt out_5_expected_1.txt
-#+1584731237
-touch in_test1.txt
-#+1584731240
-touch in_test2.txt
-#+1584731366
-rm in_test1.txt
-#+1584731375
-rm in_test2.txt
-#+1584731413
-touch in_test23.txt
-#+1584731428
-touch in_test32.txt
-#+1584734382
-c++ maintest.cc
-#+1584738188
+#+1584825514
 c++ main5_1.cc
-#+1584738206
+#+1584825531
 diff -w output.txt out_5_expected_1.txt
-#+1584738208
+#+1584825538
 c++ main5_2.cc
-#+1584738213
+#+1584825546
 diff -w output.txt out_5_expected_2.txt
-#+1584738215
+#+1584825552
 c++ main5_3.cc
-#+1584738219
+#+1584825558
 diff -w output.txt out_5_expected_3.txt
-#+1584738222
+#+1584825561
 c++ main5_4.cc
-#+1584738223
-a.out
-#+1584738226
+#+1584825566
 diff -w output.txt out_5_expected_4.txt
-#+1584738320
+#+1584825571
+c++ maintest.cc
+#+1584825572
+a.out
+#+1584825586
+diff -w output.txt out_test_expected.txt
+#+1584825649
+git status
+#+1584825670
+git commit -m "additests"
+#+1584826396
+cd pro_5
+#+1584826400
+subl p5.h
+#+1584826622
+cd ..
+#+1584826626
+git add -A
+#+1584826642
+git commit -m "p5new"
+#+1584826647
+git push origin master
+#+1584827127
 exit

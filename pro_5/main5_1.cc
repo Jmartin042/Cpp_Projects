@@ -7,18 +7,18 @@ int main ()
 	X.PRINT("X"); 
 	Y.PRINT("Y"); 
 	Z.PRINT("Z"); 
-	if (X < 2)
+	if (X < 1)
 	{}
 	else
 	{
-		Y.PRINT("Y"); // shouldn't print;
+		X.PRINT("Y"); // should print;
 	}
 
 	Z = X + Y;
 
 	if (Z < 5)
 	{
-		Z.PRINT("Z"); // print;
+		Z.PRINT("Z"); // should print;
 	}
 	else
 	{}

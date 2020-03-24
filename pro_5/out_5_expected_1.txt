@@ -23,7 +23,12 @@
 2.00 2.00 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++
 +++ P5 START +++++++++++++++++++++++++++++++++++++++++
-+++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING TRUE
++++ P5_OUTPUT >>> OVERLOADED OPERATOR < RETURNING FALSE
++++ P5 END +++++++++++++++++++++++++++++++++++++++++++
++++ P5 START +++++++++++++++++++++++++++++++++++++++++
++++ P5_OUTPUT >>> CONTENTS OF MATRIX Y IS:
+1.00 1.00 
+1.00 1.00 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++
 +++ P5 START +++++++++++++++++++++++++++++++++++++++++
 +++ P5_OUTPUT >>> OVERLOADED OPERATOR + COMPLETED

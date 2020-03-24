@@ -201,7 +201,7 @@ MATRIX operator / (int c, MATRIX a_matrix_obj)
      		temp_matrix_obj.A[i][j]=c * INV_MATRIX.A[i][j];
      	}	
 	}
-	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"/ "<<"X OPERATION IS:"<<endl;
+	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"/ X OPERATION IS:"<<endl;
 	for(i = 0; i < temp_matrix_obj.dim1; i++)
     {
     	for(j = 0; j < temp_matrix_obj.dim2; j++)
