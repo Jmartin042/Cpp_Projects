@@ -9,7 +9,10 @@ int main ()
 	Y.PRINT("Y");
 	
 	Z = X * Y; //test for (2 by 3 matrix) * (3 by 2 matrix) = (2 by 2 matrix)
+	X *= Y; //overrides X matrix, now X = Z
+	
 	Z.PRINT("Z");
+	X.PRINT("X");
 
 	MATRIX A(3,3,"in_test33.txt"), B(3,3), C(3,3);
 

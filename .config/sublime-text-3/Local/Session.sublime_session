@@ -389,10 +389,11 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_5/main5_4.cc",
+					"file": "/home/ee259d15/pro_6/p6.h",
 					"settings":
 					{
-						"buffer_size": 254,
+						"buffer_size": 8887,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
@@ -429,21 +430,52 @@
 			},
 			"file_history":
 			[
-				"/home/ee259d15/pro_4/p4.h",
-				"/home/ee259d15/pro_5/p4.h",
+				"/home/ee259d15/pro_6/out_62_expected.m",
+				"/home/ee259d15/pro_6/out_62.m",
+				"/home/ee259d15/pro_6/intest_33.txt",
+				"/home/ee259d15/pro_6/output.txt",
+				"/home/ee259d15/pro_6/maintest.cc",
+				"/home/ee259d15/pro_6/skel_p6.h",
+				"/home/ee259d15/pro_6/specPro6.txt",
+				"/home/ee259d15/pro_5/p5.h",
+				"/home/ee259d15/pro_6/GE.txt",
+				"/home/ee259d15/pro_6/main6_2.cc",
+				"/home/ee259d15/pro_6/out_6_expected_1.txt",
+				"/home/ee259d15/pro_6/main6_1.cc",
+				"/home/ee259d15/pro_6/p6.h",
+				"/home/ee259d15/pro_6/out_6_expected_3.txt",
+				"/home/ee259d15/pro_5/sample_p5.h",
+				"/home/ee259d15/pro_6/main6_3.cc",
+				"/home/ee259d15/pro_5/maintest.cc",
 				"/home/ee259d15/pro_5/out_test_expected.txt",
 				"/home/ee259d15/pro_5/output.txt",
-				"/home/ee259d15/pro_5/inversion.h",
-				"/home/ee259d15/pro_5/maintest.cc",
+				"/home/ee259d15/pro_5/specPro5.txt",
 				"/home/ee259d15/pro_5/out_5_expected_4.txt",
-				"/home/ee259d15/pro_5/maintest2.cc",
+				"/home/ee259d15/pro_5/out_5_expected_3.txt",
+				"/home/ee259d15/pro_5/out_5_expected_2.txt",
+				"/home/ee259d15/pro_5/out_5_expected_1.txt",
+				"/home/ee259d15/pro_5/main5_3.cc",
+				"/home/ee259d15/pro_5/main5_2.cc",
+				"/home/ee259d15/pro_5/main5_1.cc",
+				"/home/ee259d15/pro_5/main5_4.cc",
+				"/home/ee259d15/pro_6/in_6_4.txt",
+				"/home/ee259d15/pro_6/main6_4.cc",
+				"/home/ee259d15/pro_6/out_63_expected.m",
+				"/home/ee259d15/pro_6/out_63.m",
 				"/home/ee259d15/pro_5/in_test33.txt",
+				"/home/ee259d15/pro_6/out_6_expected_2.txt",
+				"/home/ee259d15/pro_6/in_6_3.txt",
+				"/home/ee259d15/pro_6/in_6_2.txt",
+				"/home/ee259d15/pro_6/in_6_1.txt",
+				"/home/ee259d15/pro_6/skep_p6.h",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_5/p4.h",
+				"/home/ee259d15/pro_5/inversion.h",
+				"/home/ee259d15/pro_5/maintest2.cc",
 				"/home/ee259d15/pro_5/in_test32.txt",
 				"/home/ee259d15/pro_5/in_test23.txt",
-				"/home/ee259d15/pro_5/main5_4.cc",
 				"/home/ee259d15/pro_5/in_test1.txt",
 				"/home/ee259d15/pro_5/in_test2.txt",
-				"/home/ee259d15/pro_5/p5.h",
 				"/home/ee259d15/pro_5/skel_p5.h",
 				"/home/ee259d15/pro_5/in_5_42.txt",
 				"/home/ee259d15/pro_5/in_5_12.txt",
@@ -565,28 +597,27 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_5/main5_4.cc",
+							"file": "/home/ee259d15/pro_6/p6.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 254,
+								"buffer_size": 8887,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										254,
-										254
+										3561,
+										3561
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 4135.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -631,7 +662,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,4183,862,4984,1870,5760,2160",
+			"position": "0,0,0,0,0,0,0,959,1008,5760,2160",
 			"project": "",
 			"replace":
 			{

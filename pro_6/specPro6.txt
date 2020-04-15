@@ -1,0 +1,268 @@
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_                                                                      \_
+\_   THE CITY COLLEGE OF NEW YORK, ELECTRICAL ENGINEERING DEPARTMENT    \_
+\_                         EE259 PROGRAMMING FOR EE                     \_
+\_                                                                      \_
+\_                              PROJECT 6                               \_
+\_                                                                      \_
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+PROJECT 6 DESCRIPTION:
+
+Write a C++ class called LINEAR_SOLVER to solve a set of 
+linear equations.  You will inherit from a class called MATRIX
+defined in /mnt/ee259dir/tools/pro_6/sample_p5.h file. 
+
+class LINEAR_SOLVER: public MATRIX{
+   public:
+	LINEAR_SOLVER(int);  // example: s.LINEAR_SOLVER(5);
+			// constructor 1; 
+			// there are 5 equations and 5 variables;
+	
+	LINEAR_SOLVER(char *, int);  // example: s.LINEAR_SOLVER("i_f.txt",5);
+			// constructor 2; 
+			// there are 5 eqs and 5 vars in i_f.txt;
+
+	void SOLVE_LINEAR_EQUATION(char *); // example: s.SOLVE_LINEAR_EQUATION(KEY);
+			// if KEY is "ASCEND", solve the linear equations and
+			// sort the output in ascending order;
+			// if KEY is "DESCEND" then sort the output is descending order;
+			// returns no values;
+
+	void SOLVE_BY_MATLAB(void); // example: s.SOLVE_BY_MATLAB();
+			// generate and run a MATLAB program to 
+			// solve a set of linear equations;
+			// returns no values;
+
+	void INHERITED_INVERT(void); // example: s.INHERITED_INVERT();
+			// perform matrix inversion by inheriting
+			// from PROGRAM_BANK class;
+			// returns no values;
+
+	void INVERT_BY_MATLAB(void); // example: s.INVERT_BY_MATLAB();
+			// generate and run a MATLAB program to 
+			// invert a matrix;
+			// returns no values;
+   protected:
+	int n; 	// max dimension for n is 50
+	float A[50][50];
+	float B[50];
+};
+
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Constructor 1 is defined as:
+
+	LINEAR_SOLVER m1(x)
+
+where m1 is LINEAR_SOLVER object, integer x is the dimension of matrix.
+The constructor code can be implemented as:
+
+LINEAR_SOLVER::LINEAR_SOLVER(int x)
+  	:MATRIX(x, x) // instantiate MATRIX with dim1=x and dim2=x;
+   { 	
+	n = x;
+        // your code goes below to initialize the elements of A and B 
+   	...
+   }
+
+The output to output.txt file is:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+	++++++ P6 END ++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Constructor 2 is defined as:
+
+	LINEAR_SOLVER m1(x, i_f_name)
+
+where m1 is LINEAR_SOLVER object, integer x is the dimension of matrix
+and i_f_name is a character array indicating the input file.  
+The constructor code can be implemented as:
+
+LINEAR_SOLVER::LINEAR_SOLVER(int x, char * i_f_name)
+  	:MATRIX(x, x, i_f_name) // instantiate MATRIX with input file i_f_name
+				// and dim1=x and dim2=x;
+   { 	
+        // your code to read the elements of A and B from input file goes below
+	n = x;
+   	...
+   }
+
+The format of the input file is as follows:
+
+	a_00 a_01 ... a_0(n-1)  
+	a_10 a_11 ... a_1(n-1)  
+	...
+	a_(n-1)0 a_(n-1)1 ... a_(n-1)(n-1) 
+	b_0
+	b_1
+	...
+	b_(n-1)
+
+where a_ij, b_k are floating point numbers for the elements of A matrix and
+B vector (0 < n < 50). Any element of A and B is between -99.00 and 99.00 
+inclusive. The output to output.txt is:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+	++++++ P6 DATA READ FROM FILE: in_6_1.txt
+	++++++ P6 END ++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of SOLVE_LINEAR_EQUATION method is as follows:
+
+       	s.SOLVE_LINEAR_EQUATION(KEY);
+
+where s is a LINEAR_SOLVER object and KEY is a character string 
+which can be either "ASCEND" or "DESCEND".  Use Gaussian Elimination method 
+to solve the system. The C++ code for this method is given in  the file
+called /mnt/ee259dir/tools/pro_6/GE.txt. 
+
+If KEY is "DESCEND", the output to output.txt is:
+	
+	++++++ P6 BEGIN ++++++
+	++++++ P6 MY GAUSSIAN ELIMINATION SOLUTION (SORTED IN DESCENDING ORDER):
+	X[a]= s_k 
+	.....
+	X[k]= s_a
+	++++++ P6 END ++++++
+	
+where s_i is the floating point number (with 2 decimal digits) sorted in 
+descending order.
+
+If KEY is "ASCEND", the output to output.txt is:
+	
+	++++++ P6 BEGIN ++++++
+	++++++ P6 MY GAUSSIAN ELIMINATION SOLUTION (SORTED IN ASCENDING ORDER):
+	X[a]= s_k 
+	.....
+	X[k]= s_a
+	++++++ P6 END ++++++
+	
+where s_i is the floating point number (with 2 decimal digits) sorted in 
+ascending order.
+
+In either case, if the system is singular, output.txt format is:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 MY GAUSSIAN ELIMINATION SOLUTION (SORTED IN ASCENDING ORDER):
+	++++++ P6 EQUATION IS SINGULAR
+	++++++ P6 END ++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of SOLVE_BY_MATLAB method is as follows:
+
+		s.SOLVE_BY_MATLAB();
+
+Generate an output file called out_62.m with the following content:  
+
+	A=[a_11,...,a_1n;...;a_n1,...,a_nn];
+	B=[b_1;...;b_n];
+	X=inv(A)*B;
+	fid=fopen('output.txt','a');
+	fprintf(fid,'*** RESULT FROM MATLAB (UNSORTED):\n');
+	for k=1:N
+	fprintf(fid,'X[%d]=%6.2f\n',k-1,X(k));
+	end
+
+where the contents of A and B are populated based on the values of 
+the protected variables of A and B. Similarly, for N use the value 
+of the protected variable n.
+
+After creating this file, include the following code in your method:
+
+        system("/bin/csh /mnt/ee259dir/tools/pro_6/run_out_62");
+	
+which will run your out_62.m file in MATLAB. The above MATLAB 
+program will generate the output to be appended into output.txt file 
+as follows:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 RESULT FROM MATLAB (UNSORTED):
+	X[0]= s_0 
+	...
+	X[n-1]= s_n-1 
+	++++++ P6 END ++++++
+	
+There will not be any SOLVE_BY_MATLAB method calls for singular systems
+since MATLAB may crash the system. You do not have to check for it.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of INHERITED_INVERT method is as follows:
+
+		s.INHERITED_INVERT();
+
+To invert a matrix in this method, you will perform matrix inversion 
+defined in MATRIX class as follows:
+
+	void LINEAR_SOLVER::INHERITED_INVERT()
+   	{
+		// create a temp matrix from input file:
+		MATRIX temp_m(n, n, in_file); 
+		...
+		1/temp_m; // use the friend function in MATRIX for inversion;
+		...
+   	}
+
+Object of class MATRIX writes its output to output.txt file as follows:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 AFTER INHERITING FROM MATRIX CLASS, MY RESULT IS:
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> CREATED A 2 X 2 MATRIX FROM in_6_3.txt
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P5_OUTPUT >>> THE RESULT OF 1/ X OPERATION IS:
+	b_0_0   	b_0_1    ... b_0_n-1
+	...
+	b_n-1_0   	b_n-1_1 ... b_n-1_n-1
+	+++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+	++++++ P6 END ++++++
+
+There will not be inversion attempts for singular matrices for simplicity.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of INVERT_BY_MATLAB method is as follows:
+
+                s.INVERT_BY_MATLAB();
+
+Generate an output file called out_63.m with the following content:
+
+        A=[a_11,...,a_1n;...;a_n1,...,a_nn];
+        X=inv(A);
+        fid=fopen('output.txt','a');
+        fprintf(fid,'*** INVERSION RESULT FROM MATLAB:\n');
+        for i=1:N
+        for j=1:N
+        fprintf(fid,'X[%d][%d]=%6.2f ',i-1,j-1,X(i,j));
+	end
+	fprintf(fid,'\n');
+        end
+	
+where the contents of A and B are populated based on the values of 
+the protected variables of A and B. Similarly, for N use the value 
+of the protected variable n.
+
+After creating this file, include the following code in your method:
+
+        system("/bin/csh /mnt/ee259dir/tools/pro_6/run_out_63");
+
+which will run your out_63.m file in MATLAB. The above MATLAB program 
+will generate an output to be appended to output.txt file as follows:
+
+	++++++ P6 BEGIN ++++++
+	++++++ P6 INVERSION RESULT FROM MATLAB: 
+	X[0][0]= s_00 X[0][1]= s_01 ...  X[0][n-1]= s_0n-1 
+	...
+	X[n-1][0]= s_n-10 X[n-1][1]= s_n-11 ...  X[n-1][n-1]= s_n-1n-1 
+	++++++ P6 END ++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

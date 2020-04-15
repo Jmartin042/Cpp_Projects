@@ -201,7 +201,7 @@ MATRIX operator / (int c, MATRIX a_matrix_obj)
      		temp_matrix_obj.A[i][j]=c * INV_MATRIX.A[i][j];
      	}	
 	}
-	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"/ X OPERATION IS:"<<endl;
+	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR / IS:"<<endl;
 	for(i = 0; i < temp_matrix_obj.dim1; i++)
     {
     	for(j = 0; j < temp_matrix_obj.dim2; j++)
@@ -229,7 +229,7 @@ MATRIX operator * (int c, MATRIX a_matrix_obj)
 	  		temp_matrix_obj.A[i][j]=c*a_matrix_obj.A[i][j];
 	  	}
 	}
-	o_f <<"+++ P5_OUTPUT >>> THE RESULT OF "<<c<<"* X OPERATION IS:" << endl;
+	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR * IS:"<<endl;
 	for(i=0;i<temp_matrix_obj.dim1;i++)
 	{
 		for(j=0;j<temp_matrix_obj.dim2;j++)
@@ -310,8 +310,8 @@ MATRIX::operator = (MATRIX  a_matrix)
 	}
 	else 
 	{
-		o_f << "+++ P5_OUTPUT >>> ERROR" << endl;
-		o_f << "+++ P5_OUTPUT>>> INCOMPATIBLE MATRICES" << endl;
+		o_f	<< "+++ P5_OUTPUT >>> ERROR" << endl
+			<< "+++ P5_OUTPUT>>> INCOMPATIBLE MATRICES" << endl;
 		
 	}
 	o_f << "+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
@@ -336,8 +336,8 @@ MATRIX::operator += (MATRIX a_matrix)
 	}
 	else
 	{
-		o_f<<"+++ P5_OUTPUT >>> ERROR"<<endl;
-		o_f<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;
+		o_f	<<"+++ P5_OUTPUT >>> ERROR"<<endl
+			<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;
 	}
 	o_f << "+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
 }
@@ -349,9 +349,9 @@ MATRIX::operator *= (MATRIX a_matrix)
 	
 	int i,j,k;
 	if(dim2==a_matrix.dim1)//checks for compatible dimensions to perform matrix multiplication
-     {
-     	MATRIX temp_matrix(dim1,a_matrix.dim2); //constructor 1,new temp matrix takes on dimension dim1 from base array, and dim2 from a_matrix
-     	
+    {
+		MATRIX temp_matrix(dim1,a_matrix.dim2); //constructor 1,new temp matrix takes on dimension dim1 from base array, and dim2 from a_matrix
+     
      	for (i=0;i<dim1;i++) //MATRIX MULTIPLICATION of base matrix and a_matrix into temp_matrix
      	{
      		for(j=0;j<a_matrix.dim2;j++)
@@ -374,12 +374,12 @@ MATRIX::operator *= (MATRIX a_matrix)
 
      	o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR *= COMPLETED"<<endl;
      
-     }
-     else
-     {
-        o_f <<"+++ P5_OUTPUT >>> ERROR" << endl;
-        o_f <<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
-     }
+    }
+    else if(dim2!=a_matrix.dim1)
+	{
+		o_f	<<"+++ P5_OUTPUT >>> ERROR" << endl
+			<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
+	}
 	 o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
 }
 
@@ -438,15 +438,15 @@ MATRIX::operator * (MATRIX a_matrix)
      		}
      	
      	}
-     	o_f<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR * COMPLETED"<<endl; //does not override base matrix
-     	o_f<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
+     	o_f	<<"+++ P5_OUTPUT >>> OVERLOADED OPERATOR * COMPLETED"<<endl //does not override base matrix
+			<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
      
      }
-     else
+     else if(dim2!=a_matrix.dim1)
      {
-        o_f <<"+++ P5_OUTPUT >>> ERROR" << endl;
-        o_f <<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl;
-        o_f <<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
+		o_f <<"+++ P5_OUTPUT >>> ERROR" << endl
+			<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<< endl
+			<<"+++ P5 END +++++++++++++++++++++++++++++++++++++++++++" << endl;
      }
      
         return temp_matrix;
@@ -484,13 +484,14 @@ MATRIX::operator / (MATRIX a_matrix)
          {
              for ( j= 0; j < temp_matrix.dim2; j++)
              {
-                 o_f <<setprecision(2) << setiosflags(ios::fixed | ios::showpoint) << temp_matrix.A[i][j] << " ";
+			o_f <<setprecision(2) << setiosflags(ios::fixed | ios::showpoint) 
+				<< temp_matrix.A[i][j] << " ";
              }
              o_f << endl;
          }
      	
 	}
-	else
+	else if(dim2!=INV_MATRIX.dim1)
 	{
 		o_f<<"+++ P5_OUTPUT >>> ERROR"<<endl;
 		o_f<<"+++ P5_OUTPUT >>> INCOMPATIBLE MATRICES"<<endl;

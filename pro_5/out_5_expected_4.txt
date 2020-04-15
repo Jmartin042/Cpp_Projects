@@ -32,7 +32,7 @@
 1.00 0.00 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++
 +++ P5 START +++++++++++++++++++++++++++++++++++++++++
-+++ P5_OUTPUT >>> THE RESULT OF 3/ X OPERATION IS:
++++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR / IS:
 3.00 -6.00 
 -1.50 4.50 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++
@@ -45,7 +45,7 @@
 -1.50 4.50 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++
 +++ P5 START +++++++++++++++++++++++++++++++++++++++++
-+++ P5_OUTPUT >>> THE RESULT OF 3* X OPERATION IS:
++++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR * IS:
 9.00 12.00 
 3.00 6.00 
 +++ P5 END +++++++++++++++++++++++++++++++++++++++++++

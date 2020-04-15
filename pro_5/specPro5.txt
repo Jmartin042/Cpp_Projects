@@ -37,7 +37,7 @@ class MATRIX: public PROGRAM_BANK{
 			// private variables dim1 = d1 and dim2 = d2
 			// and initializes each element to 0;
   
-	  MATRIX(int, int, char *); // constructor 2;
+	  MATRIX (int, int, char *); // constructor 2;
 			// example: MATRIX X(d1,d2,"in_name");
 			// read the elements of the matrix
 			// from a given file in_name; d1 and d2 are 
@@ -191,7 +191,7 @@ You need to open OUT_5_TEMP.txt and read the elements of the inverted
 matrix into a temporary MATRIX object. The output to output.txt is:
 
 	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
-	+++ P5_OUTPUT >>> THE RESULT OF c / X OPERATION IS:
+	+++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR / IS:
 	b_0_0   	b_0_1    ... b_0_d1-1
 	...
 	b_d1-1_0   	b_d1-1_1 ... b_d1-1_d1-1
@@ -213,7 +213,7 @@ is multiplied by c and store the results in a temp MATRIX. Return temp.
 The expected output to output.txt is:
 	
 	+++ P5 START +++++++++++++++++++++++++++++++++++++++++
-	+++ P5_OUTPUT >>> THE RESULT OF c * X OPERATION IS:
+	+++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR * IS:
 	b_0_0   	b_0_1    ... b_0_d2-1
 	...
 	b_d1-1_0   	b_d1-1_1 ... b_d1-1_d2-1

@@ -1,0 +1,12 @@
++++ P5 START +++++++++++++++++++++++++++++++++++++++++
++++ P5_OUTPUT >>> CREATED A 2 X 2 MATRIX FROM in_6_2.txt
++++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+++++++ P6 BEGIN ++++++
+++++++ P6 INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+++++++ P6 DATA READ FROM FILE: in_6_2.txt
+++++++ P6 END ++++++
+++++++ P6 BEGIN ++++++
+++++++ P6 RESULT FROM MATLAB (UNSORTED):
+X[0]=  1.00
+X[1]=  2.00
+++++++ P6 END ++++++

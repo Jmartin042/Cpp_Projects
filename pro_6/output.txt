@@ -1,0 +1,12 @@
++++ P5 START +++++++++++++++++++++++++++++++++++++++++
++++ P5_OUTPUT >>> CREATED A 2 X 2 MATRIX FROM in_6_4.txt
++++ P5 END +++++++++++++++++++++++++++++++++++++++++++
+++++++ P6 BEGIN ++++++
+++++++ P6 INSTANTIATED AN OBJECT WITH 2 EQUATIONS
+++++++ P6 DATA READ FROM FILE: in_6_4.txt
+++++++ P6 END ++++++
+++++++ P6 BEGIN ++++++
+++++++ P6 INVERSION RESULT FROM MATLAB: 
+X[0][0]=  0.33 X[0][1]=  0.33 
+X[1][0]=  0.33 X[1][1]= -0.67 
+++++++ P6 END ++++++
