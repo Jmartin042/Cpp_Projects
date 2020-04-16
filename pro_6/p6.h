@@ -172,7 +172,8 @@ LINEAR_SOLVER::SOLVE_LINEAR_EQUATION(char * command)
 	if(found==0)
 	{
 		o_f	<<"++++++ P6 BEGIN ++++++" <<endl
-			<<"++++++ P6 MY GAUSSIAN ELIMINATION SOLUTION:" <<endl
+			<<"++++++ P6 MY GAUSSIAN ELIMINATION SOLUTION"
+			<<"(SORTED IN ASCENDING ORDER):" <<endl
 			<<"++++++ P6 EQUATION IS SINGULAR" <<endl
 			<<"++++++ P6 END ++++++" <<endl;
 	}
@@ -358,8 +359,8 @@ LINEAR_SOLVER::INHERITED_INVERT()
 	o_f << "++++++ P6 BEGIN ++++++"<< endl
 		<< "++++++ P6 AFTER INHERITING FROM MATRIX CLASS, MY RESULT IS:"<< endl;
 	
-	MATRIX temp_m(n, n, in_file); 
-	1/temp_m;
+	MATRIX temp_m(n, n, in_file);  //constructor 2 from p5
+	1/temp_m; //inherits from p5
 	
 	o_f<<"++++++ P6 END ++++++"<<endl;
 }
@@ -369,7 +370,7 @@ LINEAR_SOLVER::INVERT_BY_MATLAB()
 {
 	// your doce goes below
 	
-	ofstream m_o_f2("out_63.m", ios::out); // declare new ouput file when used with m_o_f <<
+	ofstream m_o_f2("out_63.m", ios::out); // declare new ouput file when used with m_o_f2 <<
 	
 	int i,j;
 	

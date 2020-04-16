@@ -392,7 +392,7 @@
 					"file": "/home/ee259d15/pro_6/p6.h",
 					"settings":
 					{
-						"buffer_size": 8887,
+						"buffer_size": 8966,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -601,23 +601,24 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8887,
+								"buffer_size": 8966,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3561,
-										3561
+										2327,
+										2327
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax"
+									"syntax": "Packages/C++/C++.sublime-syntax",
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 4135.0,
+								"translation.y": 378.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -662,7 +663,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,0,959,1008,5760,2160",
+			"position": "0,0,0,0,0,1359,31,2483,2119,5760,2160",
 			"project": "",
 			"replace":
 			{
