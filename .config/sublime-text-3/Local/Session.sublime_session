@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 42,
+	"last_window_id": 45,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1008.0,
+		"new_window_height": 2088.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -119,21 +119,54 @@
 			},
 			"file_history":
 			[
-				"/home/ee259d15/pro_4/p4.h",
-				"/home/ee259d15/pro_5/p4.h",
+				"/home/ee259d15/pro_7/skel_p7.h",
+				"/home/ee259d15/pro_7/specPro7.txt",
+				"/home/ee259d15/pro_6/p6.h",
+				"/home/ee259d15/pro_6/out_62_expected.m",
+				"/home/ee259d15/pro_6/out_62.m",
+				"/home/ee259d15/pro_6/intest_33.txt",
+				"/home/ee259d15/pro_6/output.txt",
+				"/home/ee259d15/pro_6/maintest.cc",
+				"/home/ee259d15/pro_6/skel_p6.h",
+				"/home/ee259d15/pro_6/specPro6.txt",
+				"/home/ee259d15/pro_5/p5.h",
+				"/home/ee259d15/pro_6/GE.txt",
+				"/home/ee259d15/pro_6/main6_2.cc",
+				"/home/ee259d15/pro_6/out_6_expected_1.txt",
+				"/home/ee259d15/pro_6/main6_1.cc",
+				"/home/ee259d15/pro_6/out_6_expected_3.txt",
+				"/home/ee259d15/pro_5/sample_p5.h",
+				"/home/ee259d15/pro_6/main6_3.cc",
+				"/home/ee259d15/pro_5/maintest.cc",
 				"/home/ee259d15/pro_5/out_test_expected.txt",
 				"/home/ee259d15/pro_5/output.txt",
-				"/home/ee259d15/pro_5/inversion.h",
-				"/home/ee259d15/pro_5/maintest.cc",
+				"/home/ee259d15/pro_5/specPro5.txt",
 				"/home/ee259d15/pro_5/out_5_expected_4.txt",
-				"/home/ee259d15/pro_5/maintest2.cc",
+				"/home/ee259d15/pro_5/out_5_expected_3.txt",
+				"/home/ee259d15/pro_5/out_5_expected_2.txt",
+				"/home/ee259d15/pro_5/out_5_expected_1.txt",
+				"/home/ee259d15/pro_5/main5_3.cc",
+				"/home/ee259d15/pro_5/main5_2.cc",
+				"/home/ee259d15/pro_5/main5_1.cc",
+				"/home/ee259d15/pro_5/main5_4.cc",
+				"/home/ee259d15/pro_6/in_6_4.txt",
+				"/home/ee259d15/pro_6/main6_4.cc",
+				"/home/ee259d15/pro_6/out_63_expected.m",
+				"/home/ee259d15/pro_6/out_63.m",
 				"/home/ee259d15/pro_5/in_test33.txt",
+				"/home/ee259d15/pro_6/out_6_expected_2.txt",
+				"/home/ee259d15/pro_6/in_6_3.txt",
+				"/home/ee259d15/pro_6/in_6_2.txt",
+				"/home/ee259d15/pro_6/in_6_1.txt",
+				"/home/ee259d15/pro_6/skep_p6.h",
+				"/home/ee259d15/pro_4/p4.h",
+				"/home/ee259d15/pro_5/p4.h",
+				"/home/ee259d15/pro_5/inversion.h",
+				"/home/ee259d15/pro_5/maintest2.cc",
 				"/home/ee259d15/pro_5/in_test32.txt",
 				"/home/ee259d15/pro_5/in_test23.txt",
-				"/home/ee259d15/pro_5/main5_4.cc",
 				"/home/ee259d15/pro_5/in_test1.txt",
 				"/home/ee259d15/pro_5/in_test2.txt",
-				"/home/ee259d15/pro_5/p5.h",
 				"/home/ee259d15/pro_5/skel_p5.h",
 				"/home/ee259d15/pro_5/in_5_42.txt",
 				"/home/ee259d15/pro_5/in_5_12.txt",
@@ -303,7 +336,7 @@
 			{
 			}
 		},
-		"new_window_width": 801.0
+		"new_window_width": 867.0
 	},
 	"windows":
 	[
@@ -389,10 +422,10 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_6/p6.h",
+					"file": "/home/ee259d15/pro_7/p7.h",
 					"settings":
 					{
-						"buffer_size": 8966,
+						"buffer_size": 4841,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
@@ -430,6 +463,18 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_7/out_7_expected_1.txt",
+				"/home/ee259d15/pro_7/out_7_expected_2.txt",
+				"/home/ee259d15/pro_7/output_7.txt",
+				"/home/ee259d15/pro_7/main7_2.cc",
+				"/home/ee259d15/pro_7/output.txt",
+				"/home/ee259d15/pro_7/skel_p7.h",
+				"/home/ee259d15/pro_7/main7_1.cc",
+				"/home/ee259d15/pro_7/mat_1.m",
+				"/home/ee259d15/pro_6/sample_p6.h",
+				"/home/ee259d15/pro_6/main6_1.cc",
+				"/home/ee259d15/pro_6/p6.h",
+				"/home/ee259d15/pro_7/specPro7.txt",
 				"/home/ee259d15/pro_6/out_62_expected.m",
 				"/home/ee259d15/pro_6/out_62.m",
 				"/home/ee259d15/pro_6/intest_33.txt",
@@ -441,8 +486,6 @@
 				"/home/ee259d15/pro_6/GE.txt",
 				"/home/ee259d15/pro_6/main6_2.cc",
 				"/home/ee259d15/pro_6/out_6_expected_1.txt",
-				"/home/ee259d15/pro_6/main6_1.cc",
-				"/home/ee259d15/pro_6/p6.h",
 				"/home/ee259d15/pro_6/out_6_expected_3.txt",
 				"/home/ee259d15/pro_5/sample_p5.h",
 				"/home/ee259d15/pro_6/main6_3.cc",
@@ -547,16 +590,11 @@
 				"/home/ee259d15/pro_1/out_1_expected_3.txt",
 				"/home/ee259d15/pro_0/out_0_expected_5.txt",
 				"/home/ee259d15/pro_0/main0_5.cc",
-				"/home/ee259d15/pro_0/studentGrades.txt",
-				"/home/ee259d15/pro_0/main0_3.cc",
-				"/home/ee259d15/pro_0/main0_2.cc",
-				"/home/ee259d15/pro_0/skel_p0.h",
-				"/home/ee259d15/pro_0/a.out",
-				"/home/ee259d15/pro_0/out_0_expected_1.txt"
+				"/home/ee259d15/pro_0/studentGrades.txt"
 			],
 			"find":
 			{
-				"height": 27.0
+				"height": 57.0
 			},
 			"find_in_files":
 			{
@@ -597,28 +635,27 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_6/p6.h",
+							"file": "/home/ee259d15/pro_7/p7.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8966,
+								"buffer_size": 4841,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2327,
-										2327
+										31,
+										31
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/C++/C++.sublime-syntax",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 378.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -663,7 +700,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,1359,31,2483,2119,5760,2160",
+			"position": "0,1,0,0,0,3840,854,5760,1871,5760,2160",
 			"project": "",
 			"replace":
 			{
