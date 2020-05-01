@@ -3,7 +3,7 @@ B=[4;-1];
 X=inv(A)*B;
 fid=fopen('output.txt','a');
 fprintf(fid,'++++++ P6 BEGIN ++++++\n');
-fprintf(fid,'++++++ P6 RESULT FROM MATLAB (UNSORTED):\n'); 
+fprintf(fid,'++++++ P6 RESULT FROM MATLAB (UNSORTED):\n');
 for k=1:2
 fprintf(fid,'X[%d]=%6.2f\n',k-1,X(k));
 end

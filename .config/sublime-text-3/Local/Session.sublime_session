@@ -425,8 +425,16 @@
 					"file": "/home/ee259d15/pro_7/p7.h",
 					"settings":
 					{
-						"buffer_size": 4841,
+						"buffer_size": 4942,
 						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/ee259d15/pro_7/output.txt",
+					"settings":
+					{
+						"buffer_size": 94,
 						"line_ending": "Unix"
 					}
 				}
@@ -463,6 +471,9 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_6/p6.h",
+				"/home/ee259d15/pro_6/specPro6.txt",
+				"/home/ee259d15/pro_6/skel_p6.h",
 				"/home/ee259d15/pro_7/out_7_expected_1.txt",
 				"/home/ee259d15/pro_7/out_7_expected_2.txt",
 				"/home/ee259d15/pro_7/output_7.txt",
@@ -473,15 +484,12 @@
 				"/home/ee259d15/pro_7/mat_1.m",
 				"/home/ee259d15/pro_6/sample_p6.h",
 				"/home/ee259d15/pro_6/main6_1.cc",
-				"/home/ee259d15/pro_6/p6.h",
 				"/home/ee259d15/pro_7/specPro7.txt",
 				"/home/ee259d15/pro_6/out_62_expected.m",
 				"/home/ee259d15/pro_6/out_62.m",
 				"/home/ee259d15/pro_6/intest_33.txt",
 				"/home/ee259d15/pro_6/output.txt",
 				"/home/ee259d15/pro_6/maintest.cc",
-				"/home/ee259d15/pro_6/skel_p6.h",
-				"/home/ee259d15/pro_6/specPro6.txt",
 				"/home/ee259d15/pro_5/p5.h",
 				"/home/ee259d15/pro_6/GE.txt",
 				"/home/ee259d15/pro_6/main6_2.cc",
@@ -594,7 +602,7 @@
 			],
 			"find":
 			{
-				"height": 57.0
+				"height": 27.0
 			},
 			"find_in_files":
 			{
@@ -639,15 +647,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4841,
+								"buffer_size": 4942,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										31,
-										31
+										3650,
+										3650
 									]
 								],
 								"settings":
@@ -655,10 +663,38 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1247.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/ee259d15/pro_7/output.txt",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 94,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -700,7 +736,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,3840,854,5760,1871,5760,2160",
+			"position": "0,0,0,0,0,168,348,2285,1774,5760,2160",
 			"project": "",
 			"replace":
 			{

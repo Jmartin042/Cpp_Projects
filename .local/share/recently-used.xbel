@@ -123,16 +123,6 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_5/in_test33.txt" added="2020-03-21T19:47:17Z" modified="2020-03-28T21:00:52Z" visited="2020-03-21T19:47:18Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-28T21:00:52Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/ee259d15/pro_5/out_test_expected.txt" added="2020-03-21T21:13:26Z" modified="2020-04-06T22:17:04Z" visited="2020-03-21T21:13:26Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -153,22 +143,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/specPro6.txt" added="2020-03-26T18:18:33Z" modified="2020-04-14T21:13:42Z" visited="2020-03-26T18:18:34Z">
+  <bookmark href="file:///home/ee259d15/pro_6/specPro6.txt" added="2020-03-26T18:18:33Z" modified="2020-04-28T19:20:44Z" visited="2020-03-26T18:18:34Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-14T21:13:42Z" count="5"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-28T19:20:44Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/skel_p6.h" added="2020-03-27T21:00:13Z" modified="2020-04-14T20:17:47Z" visited="2020-03-27T21:00:13Z">
+  <bookmark href="file:///home/ee259d15/pro_6/skel_p6.h" added="2020-03-27T21:00:13Z" modified="2020-04-28T19:19:59Z" visited="2020-03-27T21:00:13Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-chdr"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-14T20:17:47Z" count="3"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-28T19:19:59Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -179,46 +169,6 @@
         <mime:mime-type type="text/x-chdr"/>
         <bookmark:applications>
           <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-24T19:44:29Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/in_6_1.txt" added="2020-03-27T21:50:11Z" modified="2020-03-27T21:50:11Z" visited="2020-03-27T21:50:12Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-27T21:50:11Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/in_6_2.txt" added="2020-03-27T21:50:39Z" modified="2020-03-27T21:50:39Z" visited="2020-03-27T21:50:39Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-27T21:50:39Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/in_6_3.txt" added="2020-03-27T21:50:46Z" modified="2020-03-27T21:50:46Z" visited="2020-03-27T21:50:47Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-27T21:50:46Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/in_6_4.txt" added="2020-03-27T21:51:04Z" modified="2020-03-28T20:46:35Z" visited="2020-03-27T21:51:04Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-28T20:46:35Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -313,26 +263,6 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/main6_4.cc" added="2020-03-28T20:06:52Z" modified="2020-03-28T20:06:52Z" visited="2020-03-28T20:06:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-c++src"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-28T20:06:52Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/out_63.m" added="2020-03-28T20:44:19Z" modified="2020-03-28T20:44:19Z" visited="2020-03-28T20:44:20Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-28T20:44:19Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/ee259d15/pro_6/maintest.cc" added="2020-03-28T21:00:24Z" modified="2020-04-14T20:06:29Z" visited="2020-03-28T21:00:24Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -349,16 +279,6 @@
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
           <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-14T20:09:54Z" count="5"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_6/out_63_expected.m" added="2020-03-28T21:14:30Z" modified="2020-03-28T21:14:30Z" visited="2020-03-28T21:14:31Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-objcsrc"/>
-        <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-03-28T21:14:30Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -453,12 +373,12 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/ee259d15/pro_7/output.txt" added="2020-04-24T22:04:04Z" modified="2020-04-24T22:04:04Z" visited="2020-04-24T22:04:04Z">
+  <bookmark href="file:///home/ee259d15/pro_7/output.txt" added="2020-04-24T22:04:04Z" modified="2020-05-01T19:43:11Z" visited="2020-04-24T22:04:04Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
         <bookmark:applications>
-          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-04-24T22:04:04Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2020-05-01T19:43:11Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

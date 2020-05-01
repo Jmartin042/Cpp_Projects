@@ -1,40 +1,40 @@
-#+1587065176
-c++ main6_2.cc
-#+1587065220
-diff -w output.txt out_6_expected_2.txt
-#+1587065224
-c++ main6_3.cc
-#+1587065239
-diff -w output.txt out_6_expected_3.txt
-#+1587065243
-c++ main6_4.cc
-#+1587065246
+#+1587767679
+c++ main7_1.cc
+#+1587768142
+c++ main7_2.cc
+#+1587768146
 a.out
-#+1587065281
-diff -w output.txt out_6_expected_4.txt
-#+1587065321
-diff -w out_62.m out_62_expected.m
-#+1587065328
-diff -w out_63.m out_63_expected.m
-#+1587065342
-submit
-#+1587065358
-cd ..
-#+1587065366
+#+1587769365
 git add -A
-#+1587065389
-git commit -m "p6adjust"
-#+1587065396
-git status
-#+1587065420
+#+1587769379
+git commit -m "p7done"
+#+1587769395
 git push origin master
-#+1587497438
-cd pro_7
-#+1587497463
+#+1588101435
+cp /mnt/ee259dir/tools/pro
+#+1588101444
 cp /mnt/ee259dir/tools/pro_7/* .
-#+1587497499
-subl specPro7.txt
-#+1587499253
+#+1588101476
+cd pro_6
+#+1588101490
+cp /mnt/ee259dir/tools/pro_6/* .
+#+1588101564
+subl p6.h
+#+1588101800
+submit
+#+1588102681
+cd ..
+#+1588102691
+mkdir pro_8
+#+1588102697
+cd pro_8
+#+1588102708
+cp /mnt/ee259dir/tools/pro_8/* .
+#+1588287872
+cd pro_7
+#+1588287873
 ls
-#+1587500821
+#+1588287880
+subl p7.h
+#+1588288198
 exit

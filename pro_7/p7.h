@@ -43,7 +43,7 @@ EZ_CURVE_FIT::EZ_CURVE_FIT(int x)
 	:LINEAR_SOLVER(2) // call base class constructor, (we need to solve 
 	   // a linear equation system of AX=B; dimension of A is 2x2) ;
 {
-	np = x; // ^^ constructor 1 from p6.h
+	np = x; // data pairs and ^^ constructor 1 from p6.h(creates text output into output.txt)
 	o_f_7	<< "++++++++ P7 BEGIN ++++++" << endl
 			<< "++++++++ P7 INSTANTIATED AN OBJECT WITH " << np << " DATA POINTS" << endl
 			<< "++++++++ P7 END ++++++" << endl;
@@ -148,7 +148,7 @@ void EZ_CURVE_FIT::LS_FIT_BY_MATLAB(char * file_name)
    	input_file >> X[i] >>Y[i];
    }
     
-   ofstream o_m_f("mat_1.m",ios::out); 
+   ofstream o_m_f("mat_1.m",ios::out); //declare o_m_f as output command into  "mat_1.m"
    // populate mat_1.m file:
    o_m_f<<"x=[";
    for(i=0;i<np;i++)
