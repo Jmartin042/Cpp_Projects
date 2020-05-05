@@ -1,3 +1,0 @@
-++++++ P6 BEGIN ++++++
-++++++ P6 INSTANTIATED AN OBJECT WITH 2 EQUATIONS
-++++++ P6 END ++++++

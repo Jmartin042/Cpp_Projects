@@ -422,19 +422,10 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_7/p7.h",
+					"file": "/home/ee259d15/pro_8/p8.h",
 					"settings":
 					{
-						"buffer_size": 4942,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_7/output.txt",
-					"settings":
-					{
-						"buffer_size": 94,
+						"buffer_size": 2312,
 						"line_ending": "Unix"
 					}
 				}
@@ -471,6 +462,9 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_8/specPro8.txt",
+				"/home/ee259d15/pro_7/p7.h",
+				"/home/ee259d15/pro_7/output.txt",
 				"/home/ee259d15/pro_6/p6.h",
 				"/home/ee259d15/pro_6/specPro6.txt",
 				"/home/ee259d15/pro_6/skel_p6.h",
@@ -478,7 +472,6 @@
 				"/home/ee259d15/pro_7/out_7_expected_2.txt",
 				"/home/ee259d15/pro_7/output_7.txt",
 				"/home/ee259d15/pro_7/main7_2.cc",
-				"/home/ee259d15/pro_7/output.txt",
 				"/home/ee259d15/pro_7/skel_p7.h",
 				"/home/ee259d15/pro_7/main7_1.cc",
 				"/home/ee259d15/pro_7/mat_1.m",
@@ -596,9 +589,7 @@
 				"/home/ee259d15/pro_0/main0_4.cc",
 				"/home/ee259d15/pro_0/out_0_expected_3.txt",
 				"/home/ee259d15/pro_1/out_1_expected_3.txt",
-				"/home/ee259d15/pro_0/out_0_expected_5.txt",
-				"/home/ee259d15/pro_0/main0_5.cc",
-				"/home/ee259d15/pro_0/studentGrades.txt"
+				"/home/ee259d15/pro_0/out_0_expected_5.txt"
 			],
 			"find":
 			{
@@ -643,19 +634,19 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_7/p7.h",
+							"file": "/home/ee259d15/pro_8/p8.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 4942,
+								"buffer_size": 2312,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3650,
-										3650
+										943,
+										943
 									]
 								],
 								"settings":
@@ -663,38 +654,10 @@
 									"syntax": "Packages/C++/C++.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 1247.0,
+								"translation.y": 324.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/ee259d15/pro_7/output.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 94,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -736,7 +699,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,168,348,2285,1774,5760,2160",
+			"position": "0,0,0,0,0,1921,31,3839,2119,5760,2160",
 			"project": "",
 			"replace":
 			{
