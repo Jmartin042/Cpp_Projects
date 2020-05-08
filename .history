@@ -1,40 +1,40 @@
-#+1588102691
-mkdir pro_8
-#+1588102697
-cd pro_8
-#+1588102708
-cp /mnt/ee259dir/tools/pro_8/* .
-#+1588362213
-c++ main7_1.cc
-#+1588362510
-diff -w output_7.txt out_7_expected_1.txt
-#+1588362514
-c++ main7_2.cc
-#+1588362517
+#+1588890014
+c++ main8_2.cc
+#+1588890033
+c++ main8_3.cc
+#+1588890136
+subl main8_1.cc
+#+1588890331
+cp /mnt/ee259dir/tools/pro_8/out* .
+#+1588890505
+clr
+#+1588890509
+clear
+#+1588890531
+cp /mnt/ee259dir/tools/pro_8/main* .
+#+1588890546
+subl main8_2.cc
+#+1588891297
+subl p8.h
+#+1588905055
+c++ main1test.cc
+#+1588905078
+diff -w output_8.txt out_8_expected_1.txt
+#+1588905082
+c++ main2test.cc
+#+1588905086
+diff -w output_8.txt out_8_expected_2.txt
+#+1588905093
+c++ main3test.cc
+#+1588905097
+diff -w output_8.txt out_8_expected_3.txt
+#+1588905102
+c++ main4test.cc
+#+1588905104
 a.out
-#+1588362549
-diff -w output_7.txt out_7_expected_2.txt
-#+1588362706
-cd ..
-#+1588362712
-git add -A
-#+1588362717
-git status
-#+1588362745
-git commit -m "minorp7"
-#+1588362751
-git push origin master
-#+1588362837
-cd pro_7
-#+1588362856
-rm output.txt .
-#+1588362875
+#+1588905107
+diff -w output_8.txt out_8_expected_4.txt
+#+1588905120
 ls
-#+1588362894
-subl p7.h
-#+1588363088
-submit
-#+1588363092
-cd
-#+1588363097
+#+1588905121
 exit

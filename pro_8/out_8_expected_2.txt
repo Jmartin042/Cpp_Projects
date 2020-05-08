@@ -1,4 +1,4 @@
-CONSTRUCTOR WITH INPUT FILE: /ee259/tools/pro_8/input_8_2.txt
+CONSTRUCTOR WITH INPUT FILE: /mnt/ee259dir/tools/pro_8/input_8_2.txt
 FUNCTION IS PARSED AS: sin ** 2 2x
 *** THERE IS AN EXTREME POINT*** df[0]: -0.252235	df[1]: 1.61798
 *** THERE IS AN EXTREME POINT*** df[1]: 1.61798	df[2]: -1.0944
