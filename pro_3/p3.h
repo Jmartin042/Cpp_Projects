@@ -160,7 +160,7 @@ GRADES::VERIFY( char*F, char*L)
 {	// your code goes below:
 	o_f<<"******* START VERIFY"<<endl;
 	int i,j, found,k;
-	if (strlen(F)>16 || strlen(L)>16)
+	if (strlen(F)>14 || strlen(L)>14) //changed to 14, from 16 post grade. array lenght error
 	{
 		o_f<<"******* INPUT ERROR"<<endl;
 		k=-2;

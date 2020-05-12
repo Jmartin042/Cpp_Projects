@@ -1,40 +1,40 @@
-#+1588890014
-c++ main8_2.cc
-#+1588890033
-c++ main8_3.cc
-#+1588890136
-subl main8_1.cc
-#+1588890331
-cp /mnt/ee259dir/tools/pro_8/out* .
-#+1588890505
-clr
-#+1588890509
-clear
-#+1588890531
-cp /mnt/ee259dir/tools/pro_8/main* .
-#+1588890546
-subl main8_2.cc
-#+1588891297
-subl p8.h
-#+1588905055
-c++ main1test.cc
-#+1588905078
-diff -w output_8.txt out_8_expected_1.txt
-#+1588905082
-c++ main2test.cc
-#+1588905086
+#+1588968035
 diff -w output_8.txt out_8_expected_2.txt
-#+1588905093
+#+1588968039
 c++ main3test.cc
-#+1588905097
+#+1588968046
 diff -w output_8.txt out_8_expected_3.txt
-#+1588905102
+#+1588968054
 c++ main4test.cc
-#+1588905104
+#+1588968055
 a.out
-#+1588905107
+#+1588968058
 diff -w output_8.txt out_8_expected_4.txt
-#+1588905120
+#+1588968138
+submit
+#+1588968168
+git commit -m "smallchangesp8"
+#+1588968355
+git pull origin master
+#+1588968410
+git add -A
+#+1588968426
+git commit -m "new"
+#+1588968433
+git status
+#+1588968443
+git push origin master
+#+1589308345
+cd pro_9
+#+1589308357
+cd ..
+#+1589308359
+cd pro+3
+#+1589308364
+cd pro_3
+#+1589308365
 ls
-#+1588905121
+#+1589308369
+subl p3.h
+#+1589310938
 exit

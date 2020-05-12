@@ -1,0 +1,2 @@
+g++ -std=c++11 -w -pthread $1 -o $1.exe
+echo "... you can now run a.out by typing:  " $1.exe

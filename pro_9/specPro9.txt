@@ -1,0 +1,165 @@
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\_                                                                    \_
+\_   THE CITY COLLEGE OF NEW YORK, ELECTRICAL ENGINEERING DEPARTMENT  \_
+\_                         EE259 PROGRAMMING FOR EE                   \_
+\_                                                                    \_
+\_                              PROJECT 9                             \_
+\_     GRADING GUIDE:                                                 \_
+\_      3 Examples : 10 points each                                   \_
+\_      7 Secret Tests: 10 points each                                \_
+\_                                                                    \_
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+PROJECT 9 DESCRIPTION:
+
+Write a C++ class called IMAGE_PROC whose prototype is defined as follows:
+
+class IMAGE_PROC{
+	public:	// public methods for this class
+	  IMAGE_PROC (int, char *, int, char *);  // constructor;
+			// example: IMAGE_PROC A1(20, "image_num.txt", 3, "filter_num.txt");
+			// creates object A1 for a 20x20 image and a 3x3 filter;
+  
+	  void PRINT(char *);	// example: A1.PRINT("ALL");
+			// print the elements of image, filter or both;
+			// returns no values;
+
+	  void COUNT(); // example: A1.COUNT();
+			// find number of occurrences of filter in image data;
+			// returns no values;
+	
+	  void LOCATE(); // example: A1.LOCATE();
+			// report locations of filter occurrences in image data;
+			// returns no values;
+	private:
+  	  int n;	// dimension of image file;
+	  int f;	// dimension of filter image;
+	  char im_file[11]; // name of image file;
+	  char filt_file[11]; // name of filter file;
+ };
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+// global variables to be declared at the top of the p9.h file:
+ofstream out_f ("output_9.txt", ios::out);
+int result[400];
+int image[20][20]; // image file;
+int filter[5][5]; // filter file;
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of the constructor IMAGE_PROC is as follows:
+
+	IMAGE_PROC A1(x, fn1, y, fn2);	
+
+where fn1 and fn2 are character strings for the image and filter file names, 
+to be stored in private variables of im_file and filt_file, respectively. 
+Integers x and y are the sizes for image and filter files, respectively 
+(both files are assumed to be square for simplicity).
+The format of the image file is:
+
+	pix_0_0 pix_0_1 pix_0_2 ... pix_0_n-1
+	...
+	pix_n-1_0 pix_n-1_1 pix_n-1_2 ... pix_n-1_n-1
+
+where integer pix_i is the value of an image pixel.  Filter file format is:
+
+	filt_0_0 filt_0_1 ... filt_0_f-1
+	...
+	filt_f-1_0 filt_f-1_1 ... filt_f-1_f-1
+
+where integer filt_i is the value of a filter pixel.
+
+After reading the values successfully, the output to output_9.txt is:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> CREATED AN IMAGE_PROC OBJECT
+	+++ P9_OUTPUT >>> IMAGE FILE IS f1 WITH SIZE OF n X n 
+	+++ P9_OUTPUT >>> FILTER FILE IS f2 WITH SIZE OF f X f 
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+For simplicity, there are no errors in the input files.
+ 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The definition of PRINT method is as follows:
+
+	  A1.PRINT(CMD);
+
+where A1 is an IMAGE_PROC object and CMD is a character string.
+
+If CMD is "ALL" this method prints image and filter pixels as follows:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> IMAGE IS:
+	pix_0_0 pix_0_1 pix_0_2 ... pix_0_n-1
+	...
+	pix_n-1_0 pix_n-1_1 pix_n-1_2 ... pix_n-1_n-1
+	+++ P9_OUTPUT >>> FILTER IS:
+	filt_0_0 filt_0_1 ... filt_0_f-1
+	...
+	filt_f-1_0 filt_f-1_1 ... filt_f-1_f-1
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+If CMD is "IMAGE" this method prints image pixels as follows:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> IMAGE IS:
+	pix_0_0 pix_0_1 pix_0_2 ... pix_0_n-1
+	...
+	pix_n-1_0 pix_n-1_1 pix_n-1_2 ... pix_n-1_n-1
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+If CMD is "FILTER" this method prints filter pixels as follows:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> FILTER IS:
+	filt_0_0 filt_0_1 ... filt_0_f-1
+	...
+	filt_f-1_0 filt_f-1_1 ... filt_f-1_f-1
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+Any other value of CMD will be an input error with an output of:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> INPUT ERROR.
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Definition of the method called COUNT is as follows:
+
+	  A1.COUNT();
+	
+where A1 is an IMAGE_PROC object.
+
+This method counts the number of occurrences of filter in image data.
+The output to output_9.tx file is:
+	
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> THERE ARE w MATCHES OF FILTER IN IMAGE.
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+where w is the number of occurrences of filter in the image data.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Definition of the method called LOCATE is as follows:
+
+	  A1.LOCATE();
+	
+where A1 is an IMAGE_PROC object.
+
+This method reports the locations of filter in image data.
+The output to output_9.tx file is:
+
+	+++ P9 START +++++++++++++++++++++++++++++++++++++++++
+	+++ P9_OUTPUT >>> THERE ARE w MATCHES OF FILTER IN IMAGE AS FOLLOWS:
+	+++ P9_OUTPUT >>> MATRIX LOCATION [x_0,y_0]
+	...
+	+++ P9_OUTPUT >>> MATRIX LOCATION [x_w-1,y_w-1]
+	+++ P9 END +++++++++++++++++++++++++++++++++++++++++++
+
+where w is the number of occurrences of filter in the image data.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
