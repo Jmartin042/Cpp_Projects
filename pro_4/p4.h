@@ -179,7 +179,7 @@ OVERLOADED_GRADES::operator -= (int x)
 		}
 		else
 		{
-			o_f<<"+++++++++ NO STUDENT WITH ID "<<x<<" FROM "<<objName<<endl;
+			o_f<<"+++++++++ NO STUDENT WITH ID "<<x<<" FROM "<<objName<<endl; //FROM TO IN
 		}		
 	}
 	o_f<<"+++++++++ END OVERLOADED OPERATOR -="<<endl;

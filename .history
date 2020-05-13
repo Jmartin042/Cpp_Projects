@@ -1,40 +1,40 @@
-#+1588968054
-c++ main4test.cc
-#+1588968055
-a.out
-#+1588968058
-diff -w output_8.txt out_8_expected_4.txt
-#+1588968138
-submit
-#+1588968168
-git commit -m "smallchangesp8"
-#+1588968355
-git pull origin master
-#+1588968426
-git commit -m "new"
-#+1588968433
-git status
-#+1589308359
-cd pro+3
-#+1589308364
-cd pro_3
-#+1589308369
-subl p3.h
-#+1589311231
-cd pro_9
-#+1589311248
-subl p9.h
-#+1589313719
-cd ..
-#+1589313754
-git add -A
 #+1589313766
 git commit -m "cpy"
-#+1589313778
-git push origin master
 #+1589314115
 clear
-#+1589314116
+#+1589331794
+g++ -std=c++11 -w -pthread main9_1.cc
+#+1589331801
+diff -w output_9.txt out_9_expected_1.txt
+#+1589331804
+g++ -std=c++11 -w -pthread main9_2.cc
+#+1589331809
+diff -w output_9.txt out_9_expected_2.txt
+#+1589331815
+g++ -std=c++11 -w -pthread main9_3.cc
+#+1589331817
+a.out
+#+1589331820
+diff -w output_9.txt out_9_expected_3.txt
+#+1589331837
+subl p9.h
+#+1589331963
+cd ..
+#+1589331969
+git add -A
+#+1589331982
+git commit -m "p9done"
+#+1589331992
+git push origin master
+#+1589342741
+cd pro_4
+#+1589346358
+subl p4.h
+#+1589393192
+cd pro_9
+#+1589393193
 ls
-#+1589314543
+#+1589395518
+submit
+#+1589404214
 exit
