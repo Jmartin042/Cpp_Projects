@@ -1,9 +1,3 @@
-#+1588968035
-diff -w output_8.txt out_8_expected_2.txt
-#+1588968039
-c++ main3test.cc
-#+1588968046
-diff -w output_8.txt out_8_expected_3.txt
 #+1588968054
 c++ main4test.cc
 #+1588968055
@@ -16,25 +10,31 @@ submit
 git commit -m "smallchangesp8"
 #+1588968355
 git pull origin master
-#+1588968410
-git add -A
 #+1588968426
 git commit -m "new"
 #+1588968433
 git status
-#+1588968443
-git push origin master
-#+1589308345
-cd pro_9
-#+1589308357
-cd ..
 #+1589308359
 cd pro+3
 #+1589308364
 cd pro_3
-#+1589308365
-ls
 #+1589308369
 subl p3.h
-#+1589310938
+#+1589311231
+cd pro_9
+#+1589311248
+subl p9.h
+#+1589313719
+cd ..
+#+1589313754
+git add -A
+#+1589313766
+git commit -m "cpy"
+#+1589313778
+git push origin master
+#+1589314115
+clear
+#+1589314116
+ls
+#+1589314543
 exit

@@ -58,9 +58,10 @@ IMAGE_PROC::IMAGE_PROC (int x, char * f1, int y, char * f2)  // constructor;
 	f = y;
 	strcpy(im_file, f1);
 	strcpy(filt_file, f2);
+	
 	ifstream im_f(f1, ios::in);
 	ifstream filt_f(f2, ios::in);
-
+	
 	for(i = 0; i < n; i++)
 	{
 		for(j = 0; j < n; j++)
@@ -77,6 +78,12 @@ IMAGE_PROC::IMAGE_PROC (int x, char * f1, int y, char * f2)  // constructor;
 		}
 	}
 	// your output messages from constructor here:
+	
+	out_f 	<< "+++ P9 START +++++++++++++++++++++++++++++++++++++++++"<<endl
+			<< "+++ P9_OUTPUT >>> CREATED AN IMAGE_PROC OBJECT"<<endl
+			<< "+++ P9_OUTPUT >>> IMAGE FILE IS "<<f1<<" WITH SIZE OF "<<n<<" X "<<n<<endl
+			<< "+++ P9_OUTPUT >>> FILTER FILE IS "<<f2<<" WITH SIZE OF "<<f<<" X "<<f<<endl
+			<< "+++ P9 END +++++++++++++++++++++++++++++++++++++++++++"<<endl;
 
 }
   
@@ -84,19 +91,131 @@ void
 IMAGE_PROC::PRINT(char * cmd)	// example: A1.PRINT("ALL");
 {
 	// your code goes below:
-
+	out_f << "+++ P9 START +++++++++++++++++++++++++++++++++++++++++" <<endl;
+	int i, j; 
+	if( strcmp(cmd,"ALL")==0 || strcmp(cmd,"IMAGE")==0 || strcmp(cmd,"FILTER")==0 )
+	{
+			
+		if( strcmp(cmd,"ALL")==0 || strcmp(cmd,"IMAGE")==0 )
+		{
+			out_f << "+++ P9_OUTPUT >>> IMAGE IS:" <<endl;
+			for(i = 0; i < n; i++)
+			{
+				for(j = 0; j < n; j++)
+				{
+					out_f << image[i][j]<<" ";
+				}
+				out_f <<endl;
+			}
+		}
+		else{}
+		
+		if( strcmp(cmd,"ALL")==0 || strcmp(cmd,"FILTER")==0)
+		{
+			out_f << "+++ P9_OUTPUT >>> FILTER IS:" <<endl;
+			for(i = 0; i < f; i++)
+			{
+				for(j = 0; j < f; j++)
+				{
+					out_f << filter[i][j]<<" ";
+				}
+				out_f <<endl;
+			}
+		}
+		else{}
+	}
+	else 
+	{
+		out_f << "+++ P9_OUTPUT >>> INPUT ERROR." <<endl;
+	}
+	out_f << "+++ P9 END +++++++++++++++++++++++++++++++++++++++++++" <<endl;
 }
 
 void
 IMAGE_PROC::COUNT() 
 {
 	// your code goes below:
-
+	
+	out_f<< "+++ P9 START +++++++++++++++++++++++++++++++++++++++++" <<endl;
+	int i,j;
+	int num_threads = n*n;
+	std::thread t[num_threads];
+	int id=0;
+	int sum = 0;
+	int read_success =0;
+	
+	for ( i=0 ;i<num_threads ;i++ )
+	{
+		result[i]=0;
+	}
+	
+	for( i=0; i<n; i++)
+	{
+		for(j=0; j<n; j++)
+		{
+			t[id] = std::thread(call_from_thread, id, i, j, n, f);
+			id++;  
+		}
+	}
+	for(i= 0; i < num_threads; i++)
+	{
+		t[i].join();
+	}
+	for(i = 0; i < num_threads; i++)
+	{
+		sum+=result[i];
+	}
+	
+	out_f 	<<"+++ P9_OUTPUT >>> THERE ARE "<<sum<<" MATCHES OF FILTER IN IMAGE."<<endl
+			<<"+++ P9 END +++++++++++++++++++++++++++++++++++++++++++" <<endl;
+			
 }
 	
 void
 IMAGE_PROC::LOCATE() 
 {
 	// your code goes below:
+	out_f<< "+++ P9 START +++++++++++++++++++++++++++++++++++++++++" <<endl;
+	int i,j;
+	int num_threads = n*n;
+	std::thread t[num_threads];
+	int id=0;
+	int sum = 0;
+	int read_success =0;
+	
+	for ( i=0 ;i<num_threads ;i++ )
+	{
+		result[i]=0;
+	}
+	for(i = 0; i < n; i++)
+	{
+		for(j = 0; j < n; j++)
+		{
+			t[id]=std::thread(call_from_thread,id,i,j,n,f);
+			id++;
+		}
+	}
+	
+	for(i = 0; i < num_threads; i++)
+	{
+		t[i].join();
+	}
+	for(i = 0; i < num_threads; i++)
+	{
+		sum+=result[i];
+	}
+	out_f << "+++ P9_OUTPUT >>> THERE ARE " << sum << " MATCHES OF FILTER IN IMAGE AS FOLLOWS:" <<endl;
+	
+	for(i = 0; i < num_threads; i++)
+	{
+		if ( result[i]==1)
+		{
+			out_f << "+++ P9_OUTPUT >>> MATRIX LOCATION [" << result_x[i] << "," << result_y[i] << "]" <<endl;
+		}
+	}
+	
+	
+	out_f << "+++ P9 END +++++++++++++++++++++++++++++++++++++++++++" <<endl;
 
+	
 }

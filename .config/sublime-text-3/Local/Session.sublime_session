@@ -425,27 +425,11 @@
 			"buffers":
 			[
 				{
-					"file": "/home/ee259d15/pro_3/p3.h",
+					"file": "/home/ee259d15/pro_9/p9.h",
 					"settings":
 					{
-						"buffer_size": 5134,
+						"buffer_size": 4822,
 						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_3/specPro3.txt",
-					"settings":
-					{
-						"buffer_size": 7767,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/ee259d15/pro_3/sample_p3.h",
-					"settings":
-					{
-						"buffer_size": 5467,
 						"line_ending": "Unix"
 					}
 				}
@@ -482,6 +466,14 @@
 			},
 			"file_history":
 			[
+				"/home/ee259d15/pro_9/main9_3.cc",
+				"/home/ee259d15/pro_9/main9_1.cc",
+				"/home/ee259d15/pro_9/out_9_expected_1.txt",
+				"/home/ee259d15/pro_9/out_9_expected_3.txt",
+				"/home/ee259d15/pro_9/output_9.txt",
+				"/home/ee259d15/pro_3/p3.h",
+				"/home/ee259d15/pro_3/sample_p3.h",
+				"/home/ee259d15/pro_3/specPro3.txt",
 				"/home/ee259d15/pro_9/specPro9.txt",
 				"/home/ee259d15/pro_9/p9.h",
 				"/home/ee259d15/pro_8/skel_p8.h",
@@ -566,10 +558,8 @@
 				"/home/ee259d15/pro_4/specPro4.txt",
 				"/home/ee259d15/pro_4/output.txt",
 				"/home/ee259d15/pro_4/skel_p4.h",
-				"/home/ee259d15/pro_3/sample_p3.h",
 				"/home/ee259d15/pro_4/out_4_expectedP5.txt",
 				"/home/ee259d15/pro_3/out_3_expected_5.txt",
-				"/home/ee259d15/pro_3/p3.h",
 				"/home/ee259d15/pro_1/p1.h",
 				"/home/ee259d15/pro_2/p2.h",
 				"/home/ee259d15/pro_4/main4_2.cc",
@@ -591,7 +581,6 @@
 				"/home/ee259d15/pro_3/maintest.cc",
 				"/home/ee259d15/pro_3/main3_3.cc",
 				"/home/ee259d15/pro_3/out_3_expected_1.txt",
-				"/home/ee259d15/pro_3/specPro3.txt",
 				"/home/ee259d15/pro_3/out_3_expected_2.txt",
 				"/home/ee259d15/pro_3/main3_2.cc",
 				"/home/ee259d15/pro_2/specPro2.txt",
@@ -604,12 +593,7 @@
 				"/home/ee259d15/pro_2/main2_5.cc",
 				"/home/ee259d15/pro_2/studentGrades.txt",
 				"/home/ee259d15/pro_2/out_2_expected_3.txt",
-				"/home/ee259d15/pro_2/out_2_expected_2.txt",
-				"/home/ee259d15/pro_2/out_2_expected_1.txt",
-				"/home/ee259d15/pro_2/main2_4.cc",
-				"/home/ee259d15/pro_2/main2_2.cc",
-				"/home/ee259d15/pro_2/main2_1.cc",
-				"/home/ee259d15/pro_2/skel_p2.h"
+				"/home/ee259d15/pro_2/out_2_expected_2.txt"
 			],
 			"find":
 			{
@@ -655,76 +639,19 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/ee259d15/pro_3/p3.h",
+							"file": "/home/ee259d15/pro_9/p9.h",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 5134,
+								"buffer_size": 4822,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										3942,
-										3942
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/C++/C++.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 1728.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/ee259d15/pro_3/specPro3.txt",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 7767,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2125,
-										2125
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/ee259d15/pro_3/sample_p3.h",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 5467,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										2525,
-										2525
+										1827,
+										1827
 									]
 								],
 								"settings":
@@ -733,10 +660,10 @@
 									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 378.0,
+								"translation.y": 153.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -778,7 +705,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,2710,31,3839,2119,5760,2160",
+			"position": "0,1,0,0,0,0,23,3840,2120,5760,2160",
 			"project": "",
 			"replace":
 			{
