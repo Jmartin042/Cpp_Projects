@@ -54,7 +54,7 @@ GRADES::GRADES(int x, int y)
 
 	for(i =0; i < n; i++)
 	{
-		i_f_3 >> firstNames[i];
+		i_f_3 >> firstNames[i];//arrays are created for names
 		i_f_3 >> lastNames[i];
 	}
 	i_f_3.close(); // close input file;
@@ -69,19 +69,20 @@ GRADES::LIST(int x)
 {	// your code goes below:
 	o_f<<"******* START LIST"<<endl;
 	int i,j;
-	if(x==5)
+	if(x==5)// first name last name and grades
 	{
 		for ( i=0; i<n; i++)
 		{
-			o_f<<firstNames[i]<<"	"<<lastNames[i]<<"	"<<id[i]<<"	";
-			for(j=0 ; j<e ;j++)
+			o_f<<firstNames[i]<<"	"<<lastNames[i]<<"	"<<id[i]<<"	";//first, last name and id
+
+			for(j=0 ; j<e ;j++)// e grades for ^^ student
 			{
 				o_f<<exam_grades[i][j]<<" ";
 			}
 			o_f<<endl;
 		}
 	}
-	else if(x==0)
+	else if(x==0)// first name last name and ID
 	{
 		for ( i=0; i<n; i++)
 		{
@@ -91,7 +92,7 @@ GRADES::LIST(int x)
 	}
 	else if(x==-5)
 	{
-		SIMPLEST_LIST(2);
+		SIMPLEST_LIST(2);// inhertitance from p0, IDs and grades
 	}
 	else
 	{

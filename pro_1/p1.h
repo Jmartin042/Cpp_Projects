@@ -49,12 +49,12 @@ SIMPLER_GRADES::SIMPLER_LIST(int x)
 	o_f<< "*** START SIMPLER_LIST"<<endl;
 	int i;
 	int j;
-	if(x==-1)
+	if(x==-1) //grades for all exams
 	{
 		o_f<<"*** GRADES FOR ALL EXAMS:"<<endl;
 		SIMPLEST_LIST(2);
 	}
-	else if(0<=x && x<e)
+	else if(0<=x && x<e) //checks for valid exam # and lists its grade
 	{
 		o_f<<"*** GRADES FOR EXAM "<<x<<":"<<endl;
 		for(i =0; i < n; i++)
@@ -91,7 +91,7 @@ SIMPLER_GRADES::SIMPLER_FIND(int x, int y)
 	}
 	else
 	{	
-		for (i = 0; i < n && found==0 ; i++)
+		for (i = 0; i < n && found==0 ; i++) //Finds specific id # 
 		{
 			if(id[i]==x)
 			{
@@ -100,7 +100,7 @@ SIMPLER_GRADES::SIMPLER_FIND(int x, int y)
 			}
 			else{}
 		}
-		if(found==1)
+		if(found==1) // if id is found id x and exam y is displayed
 		{
 			o_f<<"*** GRADE OF STUDENT WITH ID "<<x<<" FOR EXAM "<<y<<":"<<endl;
 			o_f<<x<<"	"<<exam_grades[found_pos][y]<<endl;

@@ -137,6 +137,7 @@ IMAGE_PROC::COUNT()
 	// your code goes below:
 	
 	out_f<< "+++ P9 START +++++++++++++++++++++++++++++++++++++++++" <<endl;
+	//counts the instances of filter within image
 	int i,j;
 	int num_threads = n*n;
 	std::thread t[num_threads];
@@ -176,6 +177,7 @@ IMAGE_PROC::LOCATE()
 {
 	// your code goes below:
 	out_f<< "+++ P9 START +++++++++++++++++++++++++++++++++++++++++" <<endl;
+	//counts the instances of filter within image and locates their positisons
 	int i,j;
 	int num_threads = n*n;
 	std::thread t[num_threads];

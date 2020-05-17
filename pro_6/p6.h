@@ -124,10 +124,10 @@ LINEAR_SOLVER::SOLVE_LINEAR_EQUATION(char * command)
 
 	for( col=0; col<n; col++)
 	{
-		temp_B[col]=B[col];
+		temp_B[col]=B[col];//copies B into temporary B
 		for(row=0; row<n; row++)
 		{
-			temp_A[col][row]=A[col][row];
+			temp_A[col][row]=A[col][row];// copies A into temporary A
 		}
 	}        		
 	

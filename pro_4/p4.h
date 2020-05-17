@@ -74,7 +74,7 @@ OVERLOADED_GRADES::OVERLOADED_LIST(int x)
 
 		if(x==0)
 		{
-			LIST(0);
+			LIST(0); //p3 inheritance
 		}
 		else if(x==1)
 		{	
