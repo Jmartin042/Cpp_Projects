@@ -192,15 +192,16 @@ MATRIX operator / (int c, MATRIX a_matrix_obj)
 		for(j=0;j<INV_MATRIX.dim2;j++)
 		{
 			input_file >> INV_MATRIX.A[i][j]; 
+			temp_matrix_obj.A[i][j]=c * INV_MATRIX.A[i][j];
 		}
 	}
-	for (i=0;i<INV_MATRIX.dim1;i++) // multiplies the inv_matrix by c
+	/*for (i=0;i<INV_MATRIX.dim1;i++) // multiplies the inv_matrix by c
     {  		
 		for(j=0;j<INV_MATRIX.dim2;j++)
      	{
      		temp_matrix_obj.A[i][j]=c * INV_MATRIX.A[i][j];
      	}	
-	}
+	}*/
 	o_f<<"+++ P5_OUTPUT >>> THE RESULT OF FRIEND FUNCTION FOR OPERATOR / IS:"<<endl;
 	for(i = 0; i < temp_matrix_obj.dim1; i++)
     {
